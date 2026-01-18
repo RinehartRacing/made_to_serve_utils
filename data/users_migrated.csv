@@ -1,0 +1,467 @@
+id,name,email,emailVerified,image,password,admin,date_of_birth,phone_number,address,emergency_contact_name,emergency_contact_phone,emergency_contact_email,emergency_contact_relation,email_verified,verified_at,subscribe_newsletter,communication_preference
+7c85763e-157a-4445-a673-2c3479c8f8ee,Rachel Pruski,rachel.e.pruski@gmail.com,,,$2b$10$E5ElPrFn.nKapByNnbhi7eKB49moAXmuy3VjdSFENPCfHoW4a0phi,f,1999-10-11,(512) 569-0784,"11102, Valencia Circle",Margarita Pruski,5126454619,Knm.pruski@gmail.com,Mother,t,2025-11-21 04:37:33.999+00,t,email
+64a64fc7-654e-4eaa-a733-7659481c4cb5,Kaeden Cameron,kaedencameron@icloud.com,,,$2b$10$hrr5saG8rCWpEFWKDgQaC.mn.ZovtJ3Hl7MOkO6kHg2JWbdjDIZDa,t,2002-04-23,(737) 346-1731,17405 Wildrye Drive,Jeanette Cameron,5128271902,rubyjc70@gmail.com,Mother,t,2025-11-21 04:35:12.935+00,f,email
+3e5e064e-c34b-4412-8725-bf0920e3805b,Berenice Cheng ,berenice.cheng@gmail.com,,,$2b$10$SeFOXXnfhPWGQJ2bae00f.vB3s4XSb6T7KDwxbs987Gpwjd2OXGzO,f,1991-02-16,(909) 260-7081,3000 Gracie Kiltz Ln Austin TX 78758,Dafne Moretta ,(909) 557-8588,,Friend,t,2025-11-29 16:18:28.124+00,f,email
+b5161779-1690-4c41-95e8-8461c8390faf,Tony Latvenas,tonylatvenas@madetoserve.org,,,$2b$10$wVwzFj7d3KKqPhbgi40mWuKkHqWRnFxQwGey6Br7c1GoMjT67o.2K,t,1999-09-30,(856) 318-6253,364 Pale Horse Bend,Rusty Rinehart,+1 (858) 735-7727,,Roommate,t,2025-11-17 20:30:11.96+00,t,sms
+688e4946-aa29-4fc0-a167-4daf2d3e41ad,Dominique Gamboa,dominiquegamboa98@gmail.com,,,$2b$10$si0NK313lm/a1sA8TLh8z.LFYu3fVSKTOx/VmvOmmEuISOxPQTSpu,f,1998-01-13,(512) 994-5887,109 Jacob Fontaine Ln,Frank Gamboa,(512) 971-9266,frankgamboa19@yahoo.com,Parent,t,2025-12-03 17:46:08.55+00,f,email
+7c7fa3ec-b31f-4e8e-bcb9-71414514459e,Joel Solomon,joelsteveng@gmail.com,,,,f,,,,,,,,t,,f,email
+de12fe11-0254-4859-81c8-4e4bbc8d16c7,Kayla Jayo,j.kkay07@gmail.com,,,,f,1995-01-28,(210) 954-3401,8515 South I35,Anamaria Fletcher ,(210) 954-3362,,Other,t,2025-12-03 17:07:25.165+00,t,email
+f1a9d1d7-1351-433d-9176-3f1d808d5cd4,Nathaniel Mann,nate.mann21@gmail.com,,,$2b$10$v.16dLq152uN.cZkpWQ5NuvYJnZ9m8/vg1dYEfKrHvSp6750iJfHG,f,2006-09-12,(512) 621-8335,6023 UTSA Blvd,Brian Mann,(512) 818-6150,,Parent,t,2025-11-23 02:55:06.022+00,t,email
+f124b567-3359-4c15-849c-1b48775fc61c,Karla Acosta,kacosta434@gmail.com,,,,f,,,,,,,,t,,f,email
+b4de7177-7df9-44c0-af19-657e69198f51,Alley Mcintosh,alley3033@gmail.com,,,$2b$10$Fdyvp93ZGmQpKdm9NKsLeO1AfG1KqAFMqXA1xpPRc4DlsosC4zWa6,f,2001-02-06,(512) 788-4022,209 Fort William St,Teresa Mcintosh,(512) 484-4202,,Mother,t,2025-11-23 02:55:34.983+00,t,email
+ecc4c04d-9ba9-448c-8b4b-0d638354885b,Danial Momtahani,m.daniel84.gd@gmail.com,,,$2b$10$juBH86fFPbC52dr5u2ulvO/pjCi4OPz7v3tRFunUyP.DByBOL298O,t,2000-02-03,(555) 123-1212,a,a,5551231212,,a,t,2025-11-16 22:20:12.241+00,t,email
+08bdcda2-d5cf-4cbb-af09-be01dad99b9f,Johnny Shin,shin.johnnyv@gmail.com,,,,f,1994-07-02,(737) 423-6151,8800 N Interstate Hwy 35,Rachel Pruski,5125690784,,Friend,t,2025-12-04 05:00:33.368+00,t,email
+d2eedcd5-bcde-4b36-85c4-907fc938b7b7,Robert Carmona,robertcarmona1030@icloud.com,,,$2b$10$bKRbBPQ4Vx.6fUh2Sbsci.l9GgOMPEdXwWm8u0eplLXTfvLLUF3uO,f,2002-10-30,(737) 298-0882,13617 Bullhorn Acacia Pass,Robert Carmona,(713) 373-7527,,Parent ,t,2025-11-25 11:07:02.717+00,t,sms
+a8a18bc5-432a-481c-827f-93855145a279,Amy Enwere,nenwere@yahoo.com,,,$2b$10$LivO0Sjb62SB2cKKhRL6f.qu16Y.Y5U0HNgMc3Oou5q3W0dDYXmP6,f,1985-03-02,(832) 415-7508,"1531 N Red Bud Ln unit 36, round rock, Texas 78665",Tiffany,(973) 885-5491,,Friend ,t,2025-11-23 15:04:03.551+00,t,email
+225dbd75-0339-4347-96ab-455ea34d3c76,Keilani Francisco,keilanifran@gmail.com,,,$2b$10$foKyBBEJFhNGR8u0ufTBPO5Ih4XZXwuY7V3PyDNwIffxCcZwuRpji,f,2000-02-02,(619) 920-2552,7733 burleson road,cheryl simmons,6192003626,cheryllsimmons@yahoo.com,mom,t,2025-11-21 18:13:42.11+00,t,sms
+d5bfa0b2-b80c-4956-a025-bdf217d9efc5,Evan DeWitt,evanpdewitt@gmail.com,,,$2b$10$GBRF810jLUMW5gvhDt/BGepwvyvvqgvpGAXHEc8UUMKDnuSKrhFu2,f,2001-06-27,(512) 999-2837,1623 main st apt 703,Leigh dewitt,5124683263,,Mother ,t,2025-11-29 20:04:53.77+00,f,email
+a6dcdf73-2a79-471e-8188-eda419e0fa2a,Nwamaka Enwere,nenwere@gmail.com,,,,f,,,,,,,,t,,f,email
+f54a90c9-d62c-46b8-806e-86b1837fa00d,Taylor,taylorandersonn14@gmail.com,,,,f,,,,,,,,t,,f,email
+32bf9747-cd13-4e40-b3cb-7cda77b77d38,Travis Heurtelou,trav54219@gmail.com,,,,f,,,,,,,,t,,f,email
+f08940b3-ef04-46fa-b5e6-cc18cf9ab1cc,Yareli Villagran,yareli.villagran@yahoo.com,,,$2b$10$B3/II5FCske.ZJTVT1bJ.OPiM2.SaHBH8ldiP1cgvTrGhwR1f/vgO,f,2001-04-01,(512) 379-1070,1127 W Rundberg Ln,Tony Latvenas,(856) 318-6253,,Friend ,t,2025-11-25 04:44:46.985+00,t,email
+da4fcf0a-f504-464c-acd6-9d7a5289d04b,Test Test,test@test.com,,,$2b$10$gwpbX3e2IJtkVdTr8gnIBeohjHPDGWQKwmR0BQeZmk9IRqxC1iaLS,f,2000-08-10,(516) 444-8399,Test,Test,(555) 123-1212,,Friend,t,2025-11-26 16:33:54.181+00,f,email
+23c25558-1a99-425c-aada-b859b2c9341f,Anthony Lamar,anthonylamar2314@yahoo.com,,,$2b$10$Kt57zhTeNkCN2VpFFQQMMuZZDQ5RQu.H482b3rolR3mAqd50XaKgK,f,2000-03-16,(832) 387-1786,"10500 S I-35, Apt 4308, Austin TX 78748",Omar Lamar,(832) 759-2958,,Father,t,2025-12-01 04:37:33.052+00,t,email
+70238283-e27e-479a-864d-8471b35c79ab,Danny Malm,dannyjmalm@gmail.com,,,,f,2000-05-26,(508) 667-1259,101 Westhaven Drive West Lakw Hills Texas 78746,Zach Seidel,(920) 243-8630,,Friend,t,2025-12-03 13:13:25.844+00,f,email
+5e180f5d-9639-42f2-b0c3-5468f2e1da1a,Sarah Minton,sarahminton97@gmail.com,,,$2b$10$Jx83zkfApXAT8OND2xJrDOzI8ONECtqgUZpDLdbt0FAUu3Bpapcry,f,1997-09-26,(512) 497-6180,12820 N Lamar Blvd ,Rusty Rinehart,8587357727,,Yay! ,t,2025-11-21 04:20:00.36+00,t,email
+d8542b2a-ad63-460b-a66e-4b9022e38518,Daniel,danialmomtahani@gmail.com,,,$2b$10$e3kcdOuQLNB8T4f0lkwQt.hM6L/kv8UAIm1f9GtR5mMOjOtWkU/Re,f,2000-11-15,(614) 207-3008,aaa,aaa,(877) 780-4236,,aaa,t,2025-11-24 12:57:08.57+00,f,email
+543c0578-b332-4d73-aa41-3f6994f65c03,Devin Pozzi,pozzi.devin@gmail.com,,,$2b$10$h3snfmWSq91RV.baHkCkaOQLMQFh/.MhvzQKHn9xFsggeWXbpW..u,f,2003-06-11,(720) 442-3811,501 Brazos ST ,Jason Pozzi,(720) 442-3811,,Father,t,2025-11-30 20:37:01.422+00,t,email
+6445028b-af43-4592-bef0-51eface63104,Cyndll Williams,cyndllwilliams7@gmail.com,,,$2b$10$zi5YtDyefQ0c.Rimabp8me.nPbDfuFfDjvwONaUn/0lDPuzS.Itsq,f,1997-06-04,(760) 229-0924,1405 victory drive Austin Tx,Kathy Williams ,(760) 660-0330,,Parent ,t,2025-11-30 20:40:52.284+00,f,email
+aa0cd450-15e2-4369-a5d2-76eb7f2f562d,Luis Guzman,tekluis@gmail.com,,,,f,,,,,,,,t,2025-11-30 20:36:55.61+00,f,email
+19ef830e-c709-4488-965c-d87330ef77dc,Cambry Cordsen,cordsencambry@icloud.com,,,$2b$10$rtu6Ajj8ocHEi4ESxBPjvOcA0NNUvssMcVvo3MlMrSrnHKa8JU2IS,f,2004-12-11,(469) 309-9299,14812 Oklahoma st,Lindsay Cordsen,(972) 825-2655,,Parent,t,2025-12-01 20:33:42.935+00,t,email
+dda76ed2-72f9-4a71-b50f-750de5d88102,Zach Seidl,seidlzl123@gmail.com,,,,f,2001-12-06,(920) 243-8530,101 westhaven drive,Steven seidl,(920) 851-1347,Sseidl@new.rr.com,Parent,t,2025-12-03 13:18:32.965+00,f,email
+1c72c4ce-27ba-4309-8123-d9a79acba8de,Matthew Demchsak,mdemchsak99@gmail.com,,,,f,1999-12-18,(512) 363-3922,2000 Wagon Gap Dr.,Leanne Demchsak,(512) 577-2863,,Parent,t,2025-12-03 14:34:17.399+00,f,email
+844cf2a4-6334-47d7-a9f7-408c56947691,AJ Mares,andrewjmares@gmail.com,,,$2b$10$yUhTTfPKJoAcqLoloYiIOeMD1GNfVAaEnrBwacdv8.2yHYm6RAND6,f,2004-12-20,(484) 864-1043,"300 S Lamar, APT 421",Baxter,(303) 868-4845,,Friend,t,2025-12-03 15:05:10.527+00,f,email
+397ca719-3001-46a2-a8d5-08e5cb46b59d,Baxter Blackwood,baxblackwood4@gmail.com,,,,f,2002-08-22,(303) 868-4845,300 S Lamar Blvd Apt 419,Shawn Blackwood,(303) 884-4811,,Parent,t,2025-12-03 16:41:15.857+00,f,email
+91e08a02-03ce-4631-b139-f6638ec9f896,Anthony Latvenas,tonylat918@gmail.com,,,$2b$10$e4SxJqWwIeeGEi0caXm9k.2BdkBd5J5vrwYaI.lVbJISEcI4Vbbqm,f,1999-09-30,(856) 318-6253,364 Pale Horse Bend Buda TX 78610,Rusty Rinehart ,(858) 735-7727,,Roommate,t,2025-11-24 19:07:38.622+00,f,sms
+81fd0d4a-671f-443b-96af-b88906d3bffd,Olivia Egede,oliviaegede@gmail.com,,,,f,2003-02-11,(469) 360-6604,5301 decker lane Austin Tx 78724,Armani Marshal,(832) 453-5612,armanimarshals@gmail.com,Friend,t,2025-12-04 04:21:36.611+00,t,email
+d93d78d7-385c-46d5-9137-740744664461,Grace Catherine McGlynn,gcmcglynn@gmail.com,,,$2b$10$VXLlJWSnbscm6L/yvMLPpOO3c.4owbvF3UGPzAQQaTji2PhUfAy32,f,2002-01-23,(912) 547-0536,4424 Jackson Ave Unit 251 Austin 78731,Alexis McGlynn,(912) 508-1280,,Other family member,t,2025-12-11 03:17:40.524+00,f,email
+b64b8da6-946e-4525-a161-9bd40afc61c6,Drew Gieschen,drew.gieschen@icloud.com,,,$2b$10$drtjNCqqwKFmvTsJZ5iy8eZ11/EeRTt9HlCAH2DadkVp65nGxYXlW,f,1999-10-21,(402) 499-1064,3501 Ranch Road 620 S Apt 12208,Tanya Jellison,(511) 987-8474,,Parent,t,2025-12-03 21:16:52.664+00,t,email
+3f89e602-6c3f-4b7c-9cc1-269a2934c6b7,Jacob Phillips,jacob@houstonmail.net,,,$2b$10$Gds0wVPXGye8dP8G82MP/e0GYbMwCNaqACcZ6Hn1mXLk3rIBA7n/i,f,2000-09-19,(713) 204-5802,9301 old bee caves Rd Apt 336,Diane phillips,(713) 204-4870,,Parent,t,2025-12-11 14:32:19.68+00,t,email
+27acb628-a721-4bf5-8a75-e5ee22824a4f,Bianca Pozzi,bianca.pozzi@outlook.com,,,$2b$10$Dm/yEB.EbkM.Sahv1xmGtOTPY2n1FakQ2..d/0v0Lox4oH0aXRl52,f,2005-02-20,(720) 448-3729,501 Bravos St APT 2214 Austin TX 78701,Devin Pozzi,(720) 442-3811,,Sibling,t,2025-12-04 04:26:10.565+00,t,sms
+4ec41f40-8608-4baa-9e46-4910a311b1a4,Wiktoria O,vv.olszakk@gmail.com,,,,f,,,,,,,,t,,f,email
+b97d22dd-0692-4059-92f0-a61bfe7ff115,Judith Mendoza,jgrace.mendoza@gmail.com,,,,f,1996-01-25,(956) 862-0230,109 Jacob Fontaine Ln,Amaris,9568620229,,Sibling,t,,f,email
+7369c371-46fe-4b69-991f-8312bcc4c4fc,Angel Young,itsangeltiming@outlook.com,,,$2b$10$1G3Blefy/dnmpmQZm.CTw.7bjj6B81yslxkZ6JdSqbv20RvxQSf7i,f,2000-12-01,(512) 589-0281,Birchwood road,Jeneé Amore ,(512) 589-0281,,Friend,t,2025-12-05 22:50:22.938+00,f,email
+03a4ac46-214c-4ebd-bc27-38eae02a7770,Eddy Gonzalez,eldodvye@yahoo.com,,,$2b$10$iA1KRK2eEgnHXJDPxDVPEufAIBBzRbFheBAlQNhuKmUyuZ7wliSi6,f,1992-11-21,(512) 373-5642,10201 Capitol View Dr,Beatriz Vargas,(254) 393-4934,,Sibling,t,2025-12-06 15:56:51.796+00,f,email
+31c76a52-fd0a-48f2-a1f3-d06b09b412fa,Matthew Claflin,mjwct12@yahoo.com,,,$2b$10$zv2bD0VKOY4ciUonAbPXyeun1IunaqckVM0EjbIreMd1n5pDaZN2.,t,1995-08-28,(210) 606-4686,"2729 Hwy 473 Kendalia, TX 78027",Jack Claflin,(210) 846-7054,,Parent,t,2025-12-03 23:33:09.766+00,f,email
+e905c80a-e9b1-4bbe-a921-05c613aaf838,Morghan Armenta,morghanarmentaa@gmail.com,,,,f,1998-12-18,(737) 387-7332,"6106 Atwood St, Unit B, Austin, TX 78741",Joe Trevino,(210) 204-9800,,Parent,t,2025-12-12 01:34:27.092+00,t,email
+6caeb7ca-05a2-4dbd-9ef0-c29635cc7257,Braeden Litchfield,braeden.litchfield@gmail.com,,,,f,2002-10-07,(512) 720-9164,9432 Big View Dr,John Litchfield,(503) 505-4426,jmlitchfield@icloud.com,Parent,t,2025-12-05 20:51:12.391+00,f,email
+870af34f-f29e-4b03-97cc-1a66ff869390,Justin Szumski,justinszumski@gmail.com,,,,f,2001-10-17,(317) 910-2679,"1050 Red Dunes Run, Avon, IN 46123",Ron Szumski,(317) 372-4293,,Parent,t,2025-12-09 21:52:55.006+00,f,email
+d3f2b516-b461-4941-beda-9d8443e8362e,Joel Solomon,joelsolo904@gmail.com,,,$2b$10$ny0AkqJSLgXKb0gPJf5iNOUT6fMXgriF6NDw8Wmu5NfXwpoHuoFbG,t,2000-12-13,(904) 588-2958,"3215 Cherry Lane #B Austin, TX 78703",Bobby Apice,(160) 849-5273,,Friend,t,2025-12-04 00:12:21.99+00,t,email
+b9c8c5c0-fe58-4d52-b05a-87f767cf22d7,Brock Lintelmann,brocklintelman@gmail.com,,,$2b$10$jWsK6x81XRiepOqmC8IPHeG/5FB5xz.KBmmFS45wDvya9.wBAGdi6,f,1991-03-28,(206) 484-0233,512 Garrett ct ,Fiji,(206) 306-4311,,Friend,t,2025-12-06 19:18:14.891+00,t,email
+f83ad514-8e8a-47df-91df-412ce5a467ca,Carlos Castro ,los124506@gmail.com,,,,f,2003-11-10,(956) 251-0708,9703 innes pl ,Christian castro ,(956) 235-1441,,Friend,t,2025-12-09 23:26:23.312+00,t,email
+24f6a54c-236e-436d-bbbc-5a56be4b8d5f,Dago zakra,pharelzk@gmail.com,,,$2b$10$rQplTs5OVWS7p6AZ5jgCtedtgz2oJ.DHzDYlIAVRDGw7dPubSh3B2,f,2005-01-01,(512) 955-2944,4600 Elmont dr,Yves zakra,(650) 750-4044,,Sibling,t,2025-12-10 23:22:53.277+00,t,email
+e0f40b34-4ac6-4227-b658-8a73733b495a,Trinity Hatcher,hatchertrinity13@gmail.com,,,,f,2005-10-04,(979) 264-4908,23 county road 533,marla hatcher,(979) 285-7116,marlahatchermh@gmail.com,Parent,t,2025-12-15 23:19:41.698+00,f,email
+2c7126d6-2b7b-4c31-9daf-b4b2a0198494,Marissa Cardenas,marissajade777@gmail.com,,,,f,2005-03-10,(512) 740-4909,1005 Collingwood Cove,Mara Cardenas,(512) 801-7803,,Friend,t,2025-12-17 21:25:28.5+00,t,email
+ff745631-1358-4347-a21e-208966917ef9,Cheryl Simmons,cheryllsimmons@yahoo.com,,,$2b$10$J2b82NBLfOhfCSBNR6q/B.4juN5dV0PMLUWaJhWFHMeZMAa0l6Z9S,f,1961-09-13,(619) 200-3626,"4326 , Chelford St",Keilani Francisco,(619) 920-2552,Keilanifran@gmail.com,Parent,t,2025-12-24 21:48:11.986+00,t,email
+d4938877-bde5-41cb-8fc4-3148ee5f0b7b,Katia Tapia,katiatapia679@gmail.com,,,,f,2002-10-31,(512) 921-3420,"2302 E William Cannon Dr, 918",Allison Powell,(972) 703-3032,,Friend,t,2025-12-18 03:12:46.42+00,t,email
+0ebaa5d7-79e0-407d-bb26-ef8c12ca836b,Margaarita pruski,knm.pruski@gmail.com,,,$2b$10$aa4xXqYTOeegywNo8ky7AuKXx9qlP.uexq9EEPYfKnFQA36AisGFS,f,1966-03-10,(512) 645-4619,"11102 Valencia Circle, Austin, TX 78759",Kevin Pruski,(512) 828-2400,kevnpruski@gmail.com,Spouse,t,2025-12-27 17:46:19.342+00,t,email
+a2003467-1895-42e2-86a3-dddefa4366a6,Stephanie Peel,sanajaramillo@gmail.com,,,,f,1990-03-02,(575) 520-8317,4330 Bull Creek Rd apt 1114,Darren Peel,(269) 929-8488,Darren.c.peel@gmail.com,Spouse,t,2025-12-25 03:31:23.097+00,f,email
+667ccf6b-3084-465e-8f82-c47d54131e84,Debbie Aviles,debbie.22.aviles@gmail.com,,,$2b$10$iD4sPSFGxJAFXhcs.9g4JOCTYzMygPRIMwzWU2JNEmhfkGuLzrRva,f,1999-04-20,(915) 449-3925,"3124 County Road 205 Giddings, TX, 78942",Rocio Rincon,9155402900,,Parent,t,2025-12-05 21:05:02.441+00,t,email
+6e881ad1-1dd6-48a8-b297-df0b8d76ffea,Lei Lani Hernandez,hernandezleilani2@gmail.com,,,,f,1993-11-17,(737) 389-4296,153 Saddle Ranch Dr,Edward Hernandez,(512) 775-4014,,Other family member,t,2025-12-27 05:29:44.652+00,t,email
+13fb61a1-5a11-4258-ac6c-c70d398edfd7,Rachel DeWitt,savetheturtlesksk@gmail.com,,,,f,2005-04-07,(512) 549-1501,"200 , cripple creek",Leigh DeWitt,(512) 468-3263,,Parent,t,2025-12-26 15:34:01.595+00,f,email
+f682e2f2-a01f-49d6-aaed-dc59067d2bc8,Sharlise Sears,sharlise.sears@gmail.com,,,,f,2001-08-16,(512) 925-6928,407 Moutain Laurel Dr,Bill Sears,(210) 383-6077,,Parent,t,2026-01-02 04:36:35.962+00,t,email
+23c7ff1f-e078-4ee9-a2c9-aaadb36da174,Alanna VanNoller,alannarvannoller@gmail.com,,,,f,,,,,,,,t,,f,email
+6efec889-b228-4792-8270-989d770552eb,Hannah Herring,hherring03@yahoo.com,,,$2b$10$.MtN0NnNGwlR9Ft9vBEwFuYpNqdpqTk69m5cgUgdB2tXuGducdF2S,f,2003-12-02,(469) 719-0808,14209 Canyon Trail,Melinda H ,(197) 235-1603,,Other family member,t,2025-12-31 17:38:09.575+00,t,email
+ecb093bc-556b-48a3-82d0-fd2e94e48ec6,Liz Dodson,lizdodson98@gmail.com,,,,f,1998-09-08,(319) 530-9221,3501 Ranch Rd 620 S,Lois Dodson,(319) 330-1626,,Parent,t,2025-12-21 14:51:32.764+00,t,email
+bcdc9960-2fc2-4fce-b402-8bd282dcf35c,India Williams,india.williams00126@gmail.com,,,,f,,,,,,,,t,,f,email
+a8bb8a32-74de-4998-b301-2c358643ed88,Ricky Casco,rickycasco@gmail.com,,,$2b$10$DiJco4HLmLt9iMKdrMKXLeXQuAj4NYiwo4dyd7uFezTroorlv1j42,f,1996-02-15,(808) 250-0835,"13059 Four Star Boulevard apt 1327, Austin, Tx, 78737",Richard Casco,8082681010,,Parent,t,2025-12-03 17:53:37.193+00,f,email
+f7ddda87-105c-4310-8423-c49668a57033,Israel Keshinro,pelumikeshi@gmail.com,,,,f,2000-05-10,(430) 215-4853,"6300 South Congress Ave. Apt.1404 Austin, TX 78745",Promise Keshinro ,(903) 215-6481,pkeshinro@gmail.com,Sibling,t,2026-01-02 23:10:30.068+00,f,email
+6c42887f-f2f7-44ba-8c32-ee3c51d22ee8,Robert Zborowski,robert.zborowski@gmail.com,,,$2b$10$Mtm2NOUG9PX/ePUzf5jyr.H3pOLE0JkKtNsFcUXm4jRFjUs9TXoXq,f,1967-09-10,(504) 329-1593,4200 Rimrock dr,Natalia,(504) 655-0320,,Spouse,t,2025-12-11 22:17:53.189+00,t,email
+de8ae937-2c91-4837-b460-af9d4e2ec9c9,Leah Pacelli,leahcpacelli@gmail.com,,,,f,2002-03-30,(832) 517-3928,143 Clear Pond Cove,Caryn Pacelli,(713) 894-4934,,Parent,t,2026-01-06 02:53:14.144+00,t,email
+0c7a7f36-daa5-4f75-852e-1dbdb2cb18e3,CAMERON D,camerondavidson3907@gmail.com,,,,f,,,,,,,,t,,f,email
+18193cee-737f-41f9-8683-1a7db95345bf,Crystal Lachapelle,crystal.lachapelle3@gmail.com,,,,f,1995-04-25,(602) 334-5324,"8200 S Congress Ave, Austin, TX 78745",Jeanette Sanchez,(480) 524-3317,crystal.lachapelle3@gmail.com,Parent,t,2025-12-05 15:21:26.529+00,t,email
+a645db1d-11a9-4162-a627-0c53ebb9bf80,Tyler Rose,tylerd.rose21@gmail.com,,,,f,2002-08-06,(512) 822-2647,113 Sierra Mosca Trl,Stephen Rose,(210) 383-4096,Stephenrose55@msn.com,Parent,t,2025-12-04 20:56:22.283+00,f,email
+d8ddd623-637f-48a8-b4ec-387112e38312,Steve Ntare,ntaresteve@gmail.com,,,$2b$10$L9dMiVAhP64DxNgWoBemQ./5bFqbhP1JjBDwOaDnL9jN85eWP6NTu,f,2001-01-11,(832) 773-2246,"3715 S 1st St, Apt. 261",Sandra Ntare,(207) 636-0473,,Sibling,t,2025-12-05 20:57:47.076+00,t,email
+123f4f0d-f9e9-4bcd-81b9-d45121ee60cd,Jake Gutwein,jake.h.gutwein@gmail.com,,,$2b$10$IFVKT4IMf11E92YZunrX8ePUIRqIwcVzMLw0F2v3sNXHicDlAI0yC,f,1997-07-11,(219) 819-2003,"4105 Victory Drive, Apt 02-D204, Austin, Texas 78704",Arturo Mori,(702) 807-5622,,Friend,t,2025-12-05 23:00:26.036+00,t,email
+f7d73f82-6eb0-448e-b9d8-b871db4bca8e,Hannah Placencia ,hannah.placencia@gmail.com,,,,f,1993-12-01,(760) 219-3197,"8200 S Congress Ave APT 3110, Austin, TX 78745",Kris Venhaus,(760) 413-4768,,Parent,t,2025-12-06 01:38:28.402+00,t,email
+6e0be732-0ee3-4bb6-a965-9c98242d97e5,Zachary Kahle ,zak.kahle@gmail.com,,,$2b$10$IU7I.3/sNxNYn8PzA6oF3.BNSNEqTzvYfnT2V1SXRE8u4seUiD1ny,f,2001-11-15,(512) 739-0798,7613 Journeyville Drive,Steve Kahle,(512) 423-5466,,Parent,t,2025-12-06 04:31:06.061+00,t,email
+a2b0993d-8963-4742-9c47-cbd9e2f98619,Jacob Robinett,jacobrobinettr@gmail.com,,,$2b$10$bJPdv4JZNXUpuFYaJQZpz.DBaP5.5d9XTblsglVzLqTB/NwGpZvHe,f,2002-01-04,(512) 734-5739,607 N Main St,Suzanne Robinett ,(512) 626-8701,,Parent,t,2025-12-21 18:44:21.584+00,t,email
+59a7890e-6079-48de-9844-c9c9809764ae,Isabelle Swihart,isabelle@swihart.org,,,,f,2001-08-15,(346) 620-9970,6031 Marie Ln,Charles Swihart,(832) 754-3845,,Parent,t,2025-12-11 14:36:19.353+00,f,email
+66bf066c-f971-4088-a4f8-14acfc9d8dee,Jose hernandez,class2015@icloud.com,,,$2b$10$0nRpPkDNOt2UnJ5SYMNNjOk1rlsODPcMIHCs0JM7fFZ/o8/igDR/C,f,1996-12-28,(512) 619-4225,1013 east 49th st ,Juan,(512) 773-1362,,Spouse,t,2025-12-07 20:19:37.627+00,t,email
+11c840f8-bd1a-4069-82ae-9a3bb8cb3728,Michelle Gomez,mgomez24xc@yahoo.com,,,$2b$10$g8zaWQ/1cM4OY6kW.Efl3OMRBKtlSEKlRy3FhWraS4ASTPw0ebCHa,f,1997-01-24,(956) 739-4323,2900 S 1st St,Roberto Gomez,(956) 789-2797,,Parent,t,2025-12-12 19:17:20.566+00,t,email
+ba2172e1-b439-4084-9d15-f7a737652462,Cameron Davidson,camerondavidson1234@yahoo.com,,,$2b$10$apXJjUKEim6xufgBPinCi..mnVhA7XJuuMWRj.EmCRJHDPqV/qW2i,f,2001-02-02,(713) 419-7469,2353 Dunstan dr,Grace mcglynn,(713) 419-7469,,Friend,t,2026-01-07 18:47:14.438+00,f,email
+e24c7917-84f7-470d-8872-ac276a4a515c,JD Merritt,jd@merrittlaw.org,,,$2b$10$AbBZ8w4IVnC1Ro/2ii5bN.aSCN.R5CumUvA2fB.t81hO3ONSHCMv.,f,1995-06-06,(806) 335-5047,"6117 FM 969, Apt. 2311, Austin, TX 78724",Johnny Merritt,(806) 584-6782,,Parent,t,2025-12-12 20:41:00.298+00,t,email
+6a3f4c6b-991b-4779-a427-cfb108b3e7d2,Ana Margarita Henriquez,anamargaritahenriquez@gmail.com,,,,f,1996-10-26,(512) 657-3685,300 North Lamar blvd apt 119,Antonio ,(786) 334-2330,,Parent,t,2025-12-10 03:14:54.157+00,t,email
+7b11a768-9c47-41a4-983a-b22d2233d631,Todd Howard,chaliceacoward@yahoo.com,,,$2b$10$X9toquwYFGRs/nncKaPYduBVvQVpRTNMJ7EnPSVf1w2jgX9e1Ynvi,f,1967-07-20,(303) 921-9644,37222 County Road 21,Chalice Coward,(303) 921-9644,chaliceacoward@yahoo.com,Sibling,t,2025-12-20 18:41:54.189+00,f,email
+a5fe2cd2-91b4-4e56-b402-7484f62fc502,Ian Kawai Simmons-Francisco,simmonsfrancisco.ian@gmail.com,,,$2b$10$MN5Jx8YegwsBlBoE9JA4ZOE5oviD2G05nHwvHXLa8BxDmVCEf2zCK,f,1998-08-26,(619) 920-1191,4326 Chelford St,Cheryl Lynn Simmons,(619) 200-3626,Cheryllsimmons@yahoo.com,Parent,t,2025-12-24 21:59:36.363+00,f,email
+48ffd4dc-f4d3-48eb-b4c6-c9a496a69b7d,Wiktoria Olszak,wiktoria-olszak10@wp.pl,,,$2b$10$eIc.FRR/j2JvLu5Dr5h9Ded8WT1JwVdwml1D3wV3s9s42WH2rTLJu,f,2002-02-28,(678) 925-0260,10650 Sugar Crest Ave,Andrew Hwang,(678) 925-0260,vv.olszakk@gmail.com,Other,t,2025-12-19 02:48:55.123+00,f,email
+b39b9619-91b3-419a-b028-f930286975a6,Justin Cegielski,jjcegielski@yahoo.com,,,$2b$10$HFO8Fya.Yf/lERkQCwNcVuDsIgMbanSZP3aFSVT.SSM6GQzKVjBXm,f,1990-11-05,(409) 344-2197,4510 W Guadalupe ,Luke Bellet,(615) 426-5848,,Friend,t,2025-12-20 03:30:12.87+00,t,email
+8607014c-8945-4076-9f82-543c114102aa,Alanna VanNoller,alannavannoller@icloud.com,,,$2b$10$MllYKpVJrnjd/nIQ.wbiF.rW1QWDilekk.3ht7UWvAMj.ywm2kzMC,f,1996-03-09,(512) 884-3570,1006 Banister Ln Apt 1804,John VanNoller,(512) 913-5775,,Parent,t,2025-12-31 05:28:08.123+00,t,sms
+54c4f8ac-8845-4577-b5a7-819e6ec79ba9,Chalice coward,chalice.coward@yahoo.com,,,$2b$10$LrKnaegQz6o3s./E2lmbf.4y7iRJbS5Kg8vRVXrxglGzwEHrRX0Li,f,1967-05-09,(303) 921-9644,37222 County Road 21,Chalice Coward,(303) 921-9644,chalice.coward@yahoo.com,Other,t,2025-12-20 18:35:44.65+00,t,email
+9f4072f4-5dc7-4302-aaa0-150a50db6f39,Jacy Moore,jacy.moore42@gmail.com,,,,f,2003-12-18,(210) 777-3383,15106 natural spring way,Faith Pullen,(210) 777-3383,,Friend,t,2025-12-24 14:59:54.734+00,f,email
+b0a4eecb-f067-46b8-a678-606112666723,Jared Oliveira,samuel9844@yahoo.com,,,$2b$10$5HElDxs5yR858BbxBvUlueoLMLnVvUpVnzNL4BOlsKLeEX4QzMVYa,f,1998-04-04,(512) 550-1296,11907 bell ave,Kim oliver,(512) 470-3347,,Other family member,t,2025-12-25 04:30:55.787+00,f,email
+ad70bfbc-6bf0-4ad8-ac34-9cf06220ffad,Estera Flas,esteraflasx@gmail.com,,,,f,2000-02-03,(737) 288-9601,208 Valletta Way,Kelsey ,8587751397,,Friend,t,,t,email
+27fee74f-3b9d-4de4-97f4-dcebd100957f,Davin Morgan ,davinwes2001@gmail.com,,,$2b$10$GIK/un7eB/pk1IyWbBC6Qu8RdAJPFnSBPrKfSJVu3UBwpDltv0Bdi,f,2001-01-22,(936) 346-1280,"104 live oak cir Bertram, Tx 78706",Tony Latvenas,(856) 318-6253,,Friend,t,2025-12-04 04:46:39.133+00,t,email
+1f7d42f6-e86a-4bda-8d28-c33560325d4f,Alison Gibson,aagggibson@gmail.com,,,$2b$10$ZujsDBWKi.Drp2Xu5ZbJLOEML9Jwp10gapBTEdWuaFlamOJwLgP/y,f,1999-07-09,(512) 971-5221,1500 S Lamar Blvd,Dave Gibson,(512) 769-1896,,Other family member,t,2025-12-26 17:21:36.704+00,f,email
+44bb6cbb-7ff6-45c2-ba23-5df9e03c3a6f,jade Vasquez,jadenayarivasquez0822@gmail.com,,,,f,,,,,,,,t,,f,email
+7697e726-d257-4949-8095-68c21189aec2,Kevin Pruski,kevnpruski@gmail.com,,,$2b$10$iV3uvxl8BHNE/m.HBCcYS.0mi6jIRxrEFniJpi/NS1Bli93OAPrQO,f,1967-05-30,(512) 828-2400,"11102 Valencia Circle, Austin, TX 78759",Margarita Pruski,(512) 645-4619,,Spouse,t,2025-12-27 18:32:35.828+00,t,email
+cbcc855c-93d3-41f7-8f3c-4a054e507d87,David Bauducco,antirobo1@gmail.com,,,,f,2001-07-23,(832) 833-6997,"5604 Southwest Pkwy, Unit 2431",Elizabeth Bauducco,(832) 533-4801,,Parent,t,2025-12-30 16:35:33.371+00,f,email
+a21883d1-be0c-497e-afa2-92280da208bc,Blake Walton,blake01walton@gmail.com,,,,f,1997-01-31,(712) 389-2427,"2910 Barton Skyway Apt 3409, Austin, TX 78746",Brian Stromberg,(303) 483-3051,,Friend,t,2026-01-01 00:08:32.606+00,t,email
+1d7a21ea-ade7-4aa7-b2cb-5f5b32bd761d,Lauren Lamas,lauren.a.lamas@gmail.com,,,$2b$10$MexPgpfKEBDye38SNfYr8ueDvCIi7BtDJ8EhLGvzPO97nGH8t5.oO,f,2001-10-29,(210) 488-1031,1500 South Lamar Apt 2040,Deb Lamas,(210) 243-1849,,Parent,t,2026-01-03 02:34:48.752+00,f,email
+28fd1b5e-8437-44f4-a8a6-490b6d64ff71,Elijah Guzman,elidelphia7@gmail.com,,,,f,2004-04-26,(512) 767-3470,444 Bingham point ,Luis Guzman ,(512) 914-8207,,Parent,t,2025-12-06 17:04:57.328+00,t,email
+cf878c5d-6d3c-4feb-b421-b7e7371f4d48,Rusty Rinehart,rustyrinehart2019@gmail.com,,,,t,2000-03-03,(858) 735-7727,364 Pale Horse Bend,Tony Latvenas,(856) 318-6253,,Landlord,t,,t,email
+43f038df-49ab-4601-a566-ff2ca5ce849c,Hailey Bangert,haibangert12@gmail.com,,,,f,2003-06-12,(469) 900-5395,3201 Santee Drive,Katie Bangert,(972) 467-4118,,Other,t,2026-01-06 01:58:50.746+00,f,email
+e6661d87-fc33-4788-bd0f-2e3fc2473486,Gali A,galileaa2020@gmail.com,,,,f,2002-07-10,(512) 831-2921,10616 Thaxton rd,Leticia Armenta,5126738098,,Parent,t,2025-12-04 04:20:37.001+00,t,email
+09ff8bd0-83f4-431d-8025-ba49d5ce9f5d,Shelby Austin,shelbyaustinn@gmail.com,,,,f,1998-06-30,(305) 878-8911,1781 Spyglass Dr,Ashley,(512) 757-1099,,Friend,t,2025-12-05 16:11:38.334+00,f,email
+ce4f2e67-c240-4102-8b11-055a0651221e,Diana Gonzales,dgrose@gmail.com,,,$2b$10$Y.Xr907iUM/bztqiEyFMjO8oiWEgy6xm9wS.qkxObA.7HgsLzj9y.,f,1982-12-22,(737) 717-2746,2417 Kale Dr,Elizabeth Gonzales ,(512) 833-3001,dgrose@gmail.com,Other family member,t,2025-12-24 20:00:04.198+00,t,email
+11e0dad5-703d-4268-b318-c5abb7c1aeb5,Jacob Phillips,jacobhoustonmail@gmail.com,,,,f,,,,,,,,t,,f,email
+73e00eda-9caf-4dfe-b0cd-93f143a2989d,Gracelynn Vaughn ,glvaughn26@gmail.com,,,,f,2003-02-08,(512) 423-4146,1400 Avery Nelson Pkwy,Eric Vaughn,(512) 923-2679,,Parent,t,2025-12-05 22:27:56.549+00,f,email
+f6a4bbb1-3b03-445e-b52a-a9642780b68e,Betzabel Gonzalez,bgonzalez.ins27@gmail.com,,,,f,1995-11-27,(409) 549-9596,3030 40th st,Elsa gome,(409) 433-0136,,Parent,t,2025-12-05 22:31:14.475+00,t,email
+98a71145-c9ba-4479-bef8-bc8360e7a925,Natalie Budden,nkbudden@yahoo.com,,,$2b$10$eZVpMVpU1ZYs0DdjSE97vuUbEBJmmh5AbiT969DlOezAwcB0FB7oq,f,1991-08-05,(281) 892-9677,402 N east st,Naomi Simank,(254) 931-6948,,Other family member,t,2025-12-11 21:24:07.598+00,f,email
+0fe973b4-b2f7-4582-a551-f21514e0c315,Gabriella Simpkins,gabriellasimpkins@gmail.com,,,,f,2001-11-27,(512) 718-7882,11123 Shady Hollow Dr,Shannon Simpkins ,(512) 751-6507,Shannonsimpkins@gmail.com,Parent,t,2025-12-09 22:24:09.472+00,t,email
+60e18e92-6ec3-44d2-a860-1fe8ebf76276,Ryker Davis,rykerdaviss@gmail.com,,,$2b$10$quFLO8CDa8YsmPMrrxl6huhCYpjkfMeNtbzBDQDrUMPD5F7liiqxS,f,2002-10-27,(309) 339-7638,1080 banister ln ,Chase Davis,(309) 258-4822,,Sibling,t,2026-01-03 07:23:40.697+00,t,email
+4f2479cd-6eb6-4185-baf2-0d7ebd4f889d,Alexis wingo ,alexiswingo34@gmail.com,,,,f,1998-09-03,(479) 653-2287,8700 Brodie ln,Candida wingo ,(806) 333-8652,,Parent,t,2025-12-13 05:47:55.373+00,f,email
+929cccc5-394d-405c-aafb-1667fb8fd134,Brittany Cohorst,bcohorst@gmail.com,,,$2b$10$ly8TlJzyF6pyYz3xpwkMLuGezQ0mOgkcwiUiE5bHVjGJVxULk43TW,f,1984-05-07,(512) 590-9145,12101 N Lamar Blvd Apt 1211 Austin Texas 78753,Charlene Taylor,(931) 302-1952,,Friend,t,2025-12-16 16:35:08.414+00,t,email
+ed9a78b3-b0de-4b30-a693-500e3a8e447d,ayden wilson,aydenwilson13@gmail.com,,,,f,2000-12-19,(737) 357-4500,"11215 Research blvd, Austin, TX 78759",Ephraim wilson,(053) 708-5845,,Sibling,t,2025-12-06 17:32:20.352+00,f,email
+aa72071b-8743-4b8a-b22e-47f99f3aba9a,Mayli Zapet,maylizapet@hotmail.com,,,$2b$10$POA7gVaC76RIPVPpm0DzquOleg9e28rdRHboMxiNVc9AbTn5ZM5QS,f,2000-08-09,(512) 767-4231,11217 Autumn Ash Dr,Maynor Zapet,(512) 909-7530,,Parent,t,2026-01-03 15:44:37.721+00,f,email
+79cac852-1021-4eaf-ac7b-7c1d1d39313d,Judah Baptiste,judahibaptiste@gmail.com,,,,f,1999-11-11,(254) 589-2630,4305 Duval St,Arianna Hernandez-Baptiste,(254) 588-1790,,Sibling,t,2025-12-08 15:18:13.986+00,t,email
+6a14e447-280d-48b6-9c1f-8140e675e5a6,Macy Downe,macydowne@gmail.com,,,,f,2000-10-30,(940) 393-2111,3500 E Parmer Ln,Julie Downe,(817) 239-2390,,Parent,t,2025-12-25 06:18:08.394+00,t,email
+b0ea3e16-5a82-47a2-80f1-b6f2218ed34a,Gwyn simank,gwynethsimank@gmail.com,,,$2b$10$xvtax5JamyQBVdWc2yvTou3fyNkzAmPP7BkPGwtPm2dP7mWsM3LZi,f,,(512) 635-8337,200 Cheeokee Trail,Naomi ,(512) 843-9506,,Other family member,t,2026-01-04 20:40:08.111+00,t,email
+3ea5bb80-20ee-4433-a776-5c64ec80a4e0,Evie McNeil,eviemcneil3@gmail.com,,,$2b$10$H6pIQGpaSpDU9cI/kLzR0uZtwJZ.r8Vxn4/szOj1EqTfwkyxoOf8G,f,1999-05-03,(713) 591-9484,"4424 Gaines Ranch Loop, Apt 2012",Robert McNeil,(713) 515-8452,,Parent,t,2025-12-10 04:45:33.269+00,t,email
+5beaf9b2-4a37-4ea5-ac78-4bb108a11401,Clint Riggin,rigginclint@gmail.com,,,,f,,,,,,,,t,,f,email
+11a18deb-f6c3-44cc-8b4a-eaf5dc5cdeb8,Ansley Drenner,ansleyrd@gmail.com,,,,f,2001-08-26,(512) 788-7897,3906 Pearce Rd,Julie Drenner,(512) 799-5706,Julierhd@gmail.com,Parent,t,2025-12-04 22:23:37.904+00,t,email
+dbd3c5e4-1c8f-4c76-a8d6-e0a9c4a3444b,Angelina Briceno,angelinabriceno4602.44@gmail.com,,,$2b$10$kFyhXYnMfcGA1mw7EMYwQO56C7apKydy1IN49MSD6rbck4THh6sgG,f,2004-03-03,(737) 231-5130,5804 Kennedy st ,Alfonso Briceno ,(512) 433-9957,,Parent,t,2025-12-05 23:48:34.871+00,f,email
+2c970fb9-459a-4441-ba79-17b521ea60a8,Wilkie Miller,wilkie.miller@vianations.org,,,,f,2000-05-30,(832) 289-6770,"1803 Heatherglen Ln, Austin, TX 78758",Bryan Miller,(713) 430-6438,,Parent,t,2025-12-18 22:57:25.712+00,t,email
+6fc0bc3d-6c25-40b8-8157-742615fe6d79,Tony Latvenas,tonylatvenas@gmail.com,,,,f,,,,,,,,t,,f,email
+1da7f601-b164-4d75-a3fc-3fa5b86635bd,Sean Chamberlain,smc1253@gmail.com,,,,f,1987-08-11,(281) 633-1665,2710 Francisco St,Na,(281) 633-1665,,Other,t,2025-12-20 03:34:24.062+00,f,email
+3f72d4c9-7ffd-4678-9a10-1ecab275ae55,Ashley Guerrero,ashleymichelle530@gmail.com,,,,f,2000-05-30,(512) 757-1099,"1781 Spyglass Drive apt. 120 Austin, TX 78746",Natalie Guerrero,5125022844,natalienicoleguerrero@gmail.com,Sibling,t,2025-12-04 22:49:08.702+00,f,email
+03845184-08f5-4fa8-949d-4d29fd81f9bd,Mayeli Saldana,mayelisaldana17@gmail.com,,,$2b$10$pB2k1LyPG/WO79nXXmC.QesFuhKU5Zq/UbC51VqfHWBN6Gjvgk1fW,f,2000-11-17,(713) 822-4425,7113 Burnet Rd ,Patrisia Saldana ,(713) 637-9691,,Parent,t,2026-01-05 02:10:28.679+00,t,email
+4930dce8-2383-4978-90e8-63f71e011a33,Reace Rinehart,reaceonearth@gmail.com,,,,f,2003-11-13,(858) 735-8134,"901 S O'Leary St, Apt 14",Rusty Rinehary,(858) 735-8134,,Sibling,t,2025-12-20 18:43:02.019+00,f,email
+a2a2c36a-b3ea-490f-be18-458c944ebb70,McKennon Rice,mckennonrice@gmail.com,,,$2b$10$9wf0j79GI4QsEIPfKSPhQel1B/U1w3cBa2dKWGpb4gVAk58mHmjWa,f,2000-09-16,(512) 660-3310,P.O. Box 160284 Austin Texas 78716,Brandon Brown,(512) 660-2096,,Friend,t,2025-12-21 19:48:55.763+00,f,email
+f08130df-44a1-4e9e-8150-22e1ad5dc12f,Jade Vasquez,jadevasquez0922@gmail.com,,,,f,2006-09-22,(737) 367-8229,213 Dirty Harry de ,Mom,(737) 367-8229,,Parent,t,2025-12-27 14:41:24.105+00,t,email
+8b54f537-6149-453e-9797-dc0d1947fdee,Marilyn Romero,malynromero93@gmail.com,,,,f,1993-01-07,(703) 489-6892,8515 S Interstate 35 Frontage Rd APT 2210 Austin TX 78744,Kayla Jayo,(121) 095-4340,,Friend,t,2025-12-31 03:33:35.723+00,t,email
+e5fcb886-af89-4417-843c-8b1f524ef36d,Luke Walters,lukerwalt1@gmail.com,,,,f,2002-09-30,(585) 629-4590,5700 E Riverside Dr,Jonathan Walters,(585) 259-6656,,Parent,t,2025-12-31 14:43:29.004+00,t,email
+a54364fb-793c-43d3-a38c-948d3f9d345a,Kaitlyn Czajkowski,kmczajkowski@gmail.com,,,$2b$10$JZO8eiGCVTCDWedRQoMMmOHguL22tH6PsjCFAdG6V5TUIUor4zB0W,f,1988-10-30,(607) 368-8860,360 Purple Heart drive ,N/a,(607) 368-8860,,Other,t,2026-01-01 18:56:06.32+00,t,email
+0561d98b-f4d1-4dd9-b534-8b89939c81cb,Florin Del Alba,florindelalba@gmail.com,,,,f,2004-02-16,(541) 913-7565,3211 Great Valley Dr,Rachel DeWitt,(512) 549-1501,,Spouse,t,2025-12-29 01:38:40.595+00,f,email
+34be494c-ac31-4351-953f-4d45d2abe117,Ryan Rodriguez,rynrod360@gmail.com,,,,f,2000-05-16,(832) 703-8014,211 Ralph Ablanedo Dr,Terri Rodriguez ,(832) 230-6577,,Parent,t,2025-12-06 02:41:52.095+00,t,email
+c01421e4-3780-4750-adf9-cc51ef3c0ff5,Rusty Rinehart,rrinehart858@gmail.com,,,,f,,,,,,,,t,,f,email
+b437c180-d374-43cb-af65-a0bf42c9e83b,Allison Powell,allisonpowellbusiness@gmail.com,,,,f,2004-03-03,(972) 703-3032,2510 Leon St,chris powell,(214) 664-6379,,Parent,t,2025-12-06 07:30:28.098+00,t,email
+da7fe7a7-b8b4-4e42-b171-a408c9800bc5,Cristian Aguilar,13cristianaguilar@gmail.com,,,,f,2004-04-08,(832) 691-5642,2203 Monarch Dr,Rosibel Aguilar,(832) 343-8529,,Other family member,t,2026-01-05 19:07:41.997+00,f,email
+8b7bd997-852d-4332-b16e-82527150a135,Marlaina Galvan,marlaina2109@gmail.com,,,$2b$10$2ztOTub5VB6ruy4JOpqZYeyNul.Qt8NJHrpI6ac74g12ZSXEcnOxG,f,2001-02-09,(210) 462-6499,"945 Blakey Ln. Bastrop, TX 78602",Bobby Galvan,3617016764,Bndgalvan@yahoo.com,Parent,t,2025-12-12 20:36:27.6+00,t,email
+06e12a72-308e-41e6-a97c-38db8fd788ff,Phersathiny Acosta,phersathinyacosta@gmail.com,,,,f,2004-01-21,(262) 693-7529,"1735 Rutland Drive, Apt 242",Andrew Gonzales ,(262) 693-7529,,Friend,t,2026-01-06 07:54:49.977+00,t,email
+7fac3d00-e54b-44c5-ad8f-ca754a979680,Seth Cardwell,seth.m.cardwell@gmail.com,,,,f,2000-12-12,(512) 412-4421,1120 Willowbrook Dr,Michael Cardwell,(512) 796-1485,,Parent,t,2025-12-24 22:06:36.124+00,f,email
+25b411b8-f881-43b8-8a7f-225f032e7fd3,Tannya Oliva,olivatannya@gmail.com,,,$2b$10$iABvZW/wx8XILFkzJ6SNqOhrAf/uAKDXXEz3F2Yd2x/Rc.P6IbTZK,f,1994-11-03,(832) 576-8649,8012 andravida Dr,Karla martinez,(832) 633-5332,Maqk72@hotmail.com,Parent,t,2025-12-04 08:18:49.033+00,t,email
+e8dd0510-497a-420d-8b00-cf635b6515e2,Jasmine Stoltzfus,jasminestoltzfus02@gmail.com,,,$2b$10$fc5/u2J6O3VosL9eLnaMqewxaoDS54wHdRipG0PMJHLpqjmlELbtm,f,2002-02-26,(737) 389-1784,1408 Blake St,Brandy ferguson,(512) 318-5211,,Parent,t,2026-01-06 20:48:42.683+00,f,email
+87f3df3f-3f0d-4b08-bb58-8c081ca8e0a7,Al Moreno,almypal1982@gmail.com,,,$2b$10$Wh6wnyrKi6iXzFd7U7YNme3Z4o8w22Z4vvdogDHSlCs.AglTpLdtS,f,1983-12-17,(512) 230-4898,6000 Shepherd Mountain CV Unit 1302,Lydia Moreno,(361) 455-1651,,Sibling,t,2026-01-07 03:29:11.614+00,t,email
+eb7a4172-10d4-430a-9aef-ae798f517cda,Italia Kelly,italiakelly@gmail.com,,,$2b$10$5/PnnFJcj23XT4nvmkWG4OD.lePpMczUCawSyh8m0osDNWqYMCBse,f,1999-04-30,(512) 574-7341,4131 Van Ness Ave ,Cindy Kelly ,(512) 648-9441,,Parent,t,2026-01-07 03:49:16.273+00,t,email
+f01ecec8-503e-47a3-9955-c8ba6da966b0,Jacqueline McCoy,jacqueline9792@gmail.com,,,$2b$10$kVsuI7HzPAS4yDgFE4Nvf.YwQvdxWJxi11.9F3sdA8lmkLFa1jlhK,f,2002-06-09,(512) 993-9123,1401 Romeria Drive,Carla McCoy,(512) 740-3091,,Parent,t,2026-01-07 20:21:43.344+00,f,email
+416451e3-a57f-4d2d-95e4-634258bd5c68,Emma Catherine,emcatherine03@gmail.com,,,$2b$10$DgOti1DVC9YbSpLZHSvyrO7Ld2rjlIjcIJQMJ4jkzJ7RfdC5r74Z6,f,2003-12-02,(979) 583-7510,"919 Keith Lane, Austin TX",Luke Listak,(979) 824-6593,,Sibling,t,2025-12-06 00:23:35.083+00,t,email
+a2c090aa-e7dd-4a83-8530-f96bf4442cab,Abby Antonov,abbyantonov8@gmail.com,,,,f,,(971) 413-4351,,,,,,f,,f,
+4282719b-78ee-4e7a-a37a-4be6d7450948,Abhijay Saini,,,,,f,,,,,,,,f,,f,
+739c8ac4-dfbf-4adb-92fe-f61cd2bde345,Abraham Pena,abrahampena95@hotmail.com,,,,f,,(956) 566-2900,,,,,,f,,f,
+640280ed-4fea-4210-95d0-e4f8e88d7d52,Adam Mena,adme82@icloud.com,,,,f,,(512) 589-8513,,,,,,f,,f,
+3d9d3407-08d4-4b67-924a-0dbe02b7801b,Aj Mares,,,,,f,,nan,,,,,,f,,f,
+849a55c6-d0a7-4b23-b80d-b244793d939a,Aj Pearce,ajpearce03@gmail.com,,,,f,,(512) 676-9067,,,,,,f,,f,
+54a62d56-b9e1-4c21-8b13-b65332b4f5a8,Alanna Vannoller,alannarvannoller@gmail.com,,,,f,,(512) 913-5775,,,,,,f,,f,
+f0fcee3e-1137-44a7-8545-18abf1e88cd4,Aleksei Enriquez,,,,,f,,(559) 333-9957,,,,,,f,,f,
+12c124f4-f5b4-4204-b2f6-44ffcf7b8695,Alex Fernandez,alexf23707@gmail.com,,,,f,,(210) 410-5831,,,,,,f,,f,
+07319b2a-d318-4b5c-bf3c-c6805cee77a3,Alex Yoder,,,,,f,,(210) 837-9296,,,,,,f,,f,
+9e1ffe3a-143a-45f2-b246-562d0aba82f4,Alexis Anderlitch,,,,,f,,,,,,,,f,,f,
+5b8df146-3ee5-4022-a275-05c03026750b,Alexis Norman,alnorman117@gmail.com,,,,f,,(512) 550-1282,,,,,,f,,f,
+3aac002d-b9e6-41a4-b5ed-d734fcba017a,Alicia Medrano,atibarg08@gmail.com,,,,f,,(512) 669-0019,,,,,,f,,f,
+1794b857-219d-4660-830d-e909cfeb8e42,Alli Powell,allisonpowellbusiness@gmail.com,,,,f,,(972) 703-3032,,,,,,f,,f,
+80a73527-c467-4a62-9313-821ea0149cb2,Amanda Omehe,mandyomehe@gmail.com,,,,f,,(469) 601-4209,,,,,,f,,f,
+21de7b9b-01de-4e65-8b43-5ad295e7c32d,Amy Nguyen,amyxnguyen@utexas.edu,,,,f,,(832) 230-7866,,,,,,f,,f,
+ea305f1e-3e30-4879-bb6b-cb8ecb8e636b,Ana Henriquez,,,,,f,,,,,,,,f,,f,
+8377c239-2f3f-427f-85b5-f9ff139ed6d3,Ana Maria Melo,anmams28@gmail.com,,,,f,,(512) 791-3171,,,,,,f,,f,
+17ac1afa-6eb5-4694-a875-422216801463,Anastasia Belcer,annabelcer5@gmail.com,,,,f,,(716) 225-9112,,,,,,f,,f,
+f2031c39-08fc-4fa6-80ad-046898a60d9a,Andrew Dorantes,andrewquaza71@gmail.com,,,,f,,(512) 466-2753,,,,,,f,,f,
+59bff917-502e-4247-9197-1b78a912b236,Anevae Barrera,anevae.barrera3@gmail.com,,,,f,,(737) 356-1332,,,,,,f,,f,
+b6ed7719-de31-4c40-a9ec-3fe4b06fea44,Angelica Castro,angelicacastro19@yahoo.com,,,,f,,(615) 681-9667,,,,,,f,,f,
+49eae012-c3c5-4236-8a36-5903971d23e2,Angelina Bsiceno,,,,,f,,,,,,,,f,,f,
+ba22f041-82fb-4e50-818f-9f9805e470cc,Annie Perez,annieperez2003@icloud.com,,,,f,,(512) 775-7156,,,,,,f,,f,
+6b16b42c-812c-4cce-b6a4-64a6ea4f5b28,Anthony Pancamo,anthony.pancamo@g.austincc.edu,,,,f,,(512) 995-9191,,,,,,f,,f,
+2f0a43bd-d093-4f50-b6c0-5bf5714585a1,Anya Whitman,,,,,f,,nan,,,,,,f,,f,
+5b3d7fe8-00e7-4c76-ba45-cc2129ea5c1d,Arianna Alford,ariannatalford55@gmail.com,,,,f,,(737) 229-0729,,,,,,f,,f,
+72b8598b-0481-4b1a-afdb-0ed437a5daca,Ashleigh Harvey,ashleighharvey22@gmail.com,,,,f,,(404) 509-8272,,,,,,f,,f,
+009837ad-ddc0-49da-a747-894dbcfd889f,Ashley Guernero,,,,,f,,,,,,,,f,,f,
+3b771902-b280-480e-bfca-bc861f653953,Austin Tredinnick,a.tredinnick@protonmail.com,,,,f,,(443) 655-0778,,,,,,f,,f,
+d847770d-83a0-4a1f-a2bd-ddd4f37416f7,Ayden Wilson,aydenwilson13@gmail.com,,,,f,,(737) 357-4500,,,,,,f,,f,
+280c852c-f3fc-44e5-9c38-5d9b53367ed4,Ayub Yousaf,,,,,f,,(732) 397-7299,,,,,,f,,f,
+055acbab-0939-49ed-b31d-4c35f0675bdd,Baylee Olsen,bayleeolsen58@gmail.com,,,,f,,(682) 392-7358,,,,,,f,,f,
+db890373-084b-4ed3-87ed-9f25c2744ea7,Berenice Cheng,berenice.cheng@gmail.com,,,,f,,(909) 260-7081,,,,,,f,,f,
+9a19dc84-1d8a-422f-b64e-5a06b7eb1fd5,Blake Fuller,,,,,f,,,,,,,,f,,f,
+858cdae1-8aa8-45f1-bf8a-ae861f303232,Brad Lackey,,,,,f,,,,,,,,f,,f,
+7f6d6cb6-370d-4d4f-84ee-49c2cb5473ca,Bradley Lackey,lackeybrad5@gmail.com,,,,f,,(360) 953-4509,,,,,,f,,f,
+4835439e-8755-4572-8b81-7f5eba1e2ece,Brandon Delfin,brandondelfin17@icloud.com,,,,f,,(512) 468-6475,,,,,,f,,f,
+979a0530-69a6-42f8-8a88-01195fc6bb29,Brandon Howard,brandon.howard20@yahoo.com,,,,f,,(682) 666-3838,,,,,,f,,f,
+101cc976-f26d-494b-b2cc-ceea18947239,Brandon Sage,brandonsage15@gmail.com,,,,f,,(619) 985-1626,,,,,,f,,f,
+c3c070eb-25f6-4b2e-a5a8-e68a752a890f,Britt Cohorst,bcohorst@gmail.com,,,,f,,(512) 590-9145,,,,,,f,,f,
+9c755eea-d4d6-40fc-af17-4358fcba341e,Caleb Vigil,,,,,f,,,,,,,,f,,f,
+50ad9790-2312-40a6-8906-13a0785e3cd0,Cameron Walker,camaro1457@gmail.com,,,,f,,(512) 975-8207,,,,,,f,,f,
+4a8324f7-fa91-43cc-ae9b-88ae025fd645,Campbell Whann,cwhann@me.com,,,,f,,(469) 994-7626,,,,,,f,,f,
+3e0c84d1-f145-49c9-8698-2edf1e49599c,Carlos Castro,,,,,f,,(956) 251-0708,,,,,,f,,f,
+08b4a1dc-7d65-4463-af1b-bb04dd6c5cee,Casey Woodard,caseywoodard56@gmail.com,,,,f,,(716) 783-1417,,,,,,f,,f,
+b86a4669-15ab-4144-b0c0-91cecc336136,Chalice Coward,,,,,f,,nan,,,,,,f,,f,
+aaf544aa-0d18-4dd6-9556-74bcbf6e9a59,Charity Mohler,charitymohler@gmail.com,,,,f,,(574) 226-8013,,,,,,f,,f,
+82d855ca-4746-4451-8f4c-c59a961f5d2c,Chris Caliendo,,,,,f,,(828) 781-7136,,,,,,f,,f,
+54f3cf4a-fc48-404a-8097-6353c03d805a,Chris Latvenas,,,,,f,,,,,,,,f,,f,
+b954e254-6b04-43cd-bcd9-8e79e412fb6c,Chris Leboda,,,,,f,,(512) 994-8247,,,,,,f,,f,
+7861ceba-5e15-4d2c-b8aa-b17f40d6fd1c,Christopher Latvenas,cnblat@gmail.com,,,,f,,(856) 271-9805,,,,,,f,,f,
+4b0a007d-e386-4af4-a3b5-24a259ae6a5c,Claire Nevill,,,,,f,,,,,,,,f,,f,
+1879d914-d30b-471c-ba55-ce041776dd67,Cody Bressler,bresslc5@gmail.com,,,,f,,(717) 917-1485,,,,,,f,,f,
+81cf87c0-864d-43c6-a6f3-3b58df4c5574,Cordell Mazzetti,cordellmazz@gmail.com,,,,f,,(512) 964-1588,,,,,,f,,f,
+6eae11ed-b047-42fa-8a18-8a5e4bca148b,Dago Zakra,,,,,f,,nan,,,,,,f,,f,
+cf59cca6-3769-4c8f-b4a6-ec1bd54c11ce,Dallas Hartley,dhartley93@gmail.com,,,,f,,(336) 831-5262,,,,,,f,,f,
+a3cd7c6a-3ed5-4336-86ec-5f30ab71e552,Damaris Renteria,renteriadamariz@gmail.com,,,,f,,(915) 790-9958,,,,,,f,,f,
+2c5e0a23-34e9-43a3-82d8-b1f7fa291173,Dana Drahos,danadrahos@gmail.com,,,,f,,(445) 895-5227,,,,,,f,,f,
+9424be98-5c57-42a8-94f1-51400eba4d01,Daniel Didonna,ddidonna205@gmail.com,,,,f,,(915) 208-3854,,,,,,f,,f,
+1578c4f3-0b97-4df0-99ed-b0678aafb6b5,Daniel Medrano,worshipmusicdjs@gmail.com,,,,f,,(737) 202-0146,,,,,,f,,f,
+8dc5a723-a595-402e-a1c6-6b650cea14c4,Danielle Briones,lopez2011.db@gmail.com,,,,f,,(512) 897-2840,,,,,,f,,f,
+08356257-2183-482c-9f24-44219b1768e5,Danna Robles,,,,,f,,(512) 296-8385,,,,,,f,,f,
+443cf4d9-8320-48ca-a00d-7040505584dc,Danny Didonna,,,,,f,,,,,,,,f,,f,
+89bb106e-ae88-456d-b5eb-e17f0b6fe156,Darik Lohrstorfer,512darik@gmail.com,,,,f,,(512) 734-7434,,,,,,f,,f,
+1364d430-cb3e-438b-8663-c866a4ad5228,Dave Wood,,,,,f,,(856) 693-7437,,,,,,f,,f,
+1d2ef9bb-0683-4be9-9425-6d32edac9ea7,David Prestwood,grandathlete42@gmail.com,,,,f,,(512) 661-4754,,,,,,f,,f,
+b2113057-dad2-4dd3-8891-29a48c36a71e,Davin Morgan,,,,,f,,(936) 346-1280,,,,,,f,,f,
+5ef12a8e-3cdc-4dc2-8e25-23ddaf1ff062,Demi Awosika-olumo,awosikademi@gmail.com,,,,f,,(832) 396-6278,,,,,,f,,f,
+7e293554-259b-4b42-87ad-2241ab515ce8,Destiny Guerra,,,,,f,,,,,,,,f,,f,
+109e5382-5f4e-4b19-83f1-77d5a45934a9,Destiny Hernandez,herndest2005@gmail.com,,,,f,,(262) 332-3559,,,,,,f,,f,
+6e1ee985-3dda-413c-bc7b-11106350aba0,Doninique Gamboa,,,,,f,,,,,,,,f,,f,
+9fd1b805-1b6d-4663-9f59-1adfb9bc8250,Donovan Daniels,donovan.daniels50@gmail.com,,,,f,,(202) 602-6799,,,,,,f,,f,
+e7f24930-2407-4da0-84ac-a2fab0e706bb,Dre Giscombe,,,,,f,,,,,,,,f,,f,
+13bc58cc-64be-42be-9b0e-686326c57c12,Drew Greschen,,,,,f,,,,,,,,f,,f,
+e1f118c4-3a6e-457c-814a-df12fefdf57d,Duke Davison,,,,,f,,(862) 250-2326,,,,,,f,,f,
+d908de6b-303b-4137-9e53-ec15fff4fc2f,Eden Garrard,efg3336@yahoo.com,,,,f,,(903) 530-6003,,,,,,f,,f,
+4980a82e-5aac-4b78-9a88-860c2ad55545,Elaina Giolando,elainagiolando@gmail.com,,,,f,,(512) 809-1138,,,,,,f,,f,
+9d10d7ab-34fa-476f-8475-d1b660768807,Elexus Miera,elexusmieraaa@icloud.com,,,,f,,(575) 680-4796,,,,,,f,,f,
+62ca301b-460b-4f21-850f-e8e11470e556,Eli Puchalski,,,,,f,,,,,,,,f,,f,
+6798df28-c2e8-4cc3-a862-bc6f8756aeda,Elijah Jones,elijahchance26@gmail.com,,,,f,,(214) 785-1556,,,,,,f,,f,
+122c3ce1-c2b8-4fc9-a8da-1c1a9d8c965d,Elijah Puchalski,puchalskieli@gmail.com,,,,f,,(252) 288-2683,,,,,,f,,f,
+5797de1c-e9d2-4bc9-8d24-a108826c3ee0,Ella Simpkins,,,,,f,,,,,,,,f,,f,
+233912e7-60bd-469e-af39-fc793720da4f,Ellie Duda,ellieduda@gmail.com,,,,f,,(407) 462-7264,,,,,,f,,f,
+9aa7aeed-e23f-4985-855f-75016edf322c,Ellie Richardson,elliegrichardson@gmail.com,,,,f,,(940) 390-3121,,,,,,f,,f,
+e1657036-96f4-41a8-8f5e-3bb95d892efd,Elyse Theriac,elysemariephoto@gmail.com,,,,f,,(409) 923-2083,,,,,,f,,f,
+fcb9fd51-8c8b-42b2-9740-1a7aff74e5f1,Emily Herzog,eaeggnog18@gmail.com,,,,f,,(512) 808-9137,,,,,,f,,f,
+7064ae17-5263-4138-979c-206a74554f82,Emily Miller,emilyamiller210@gmail.com,,,,f,,(605) 750-0008,,,,,,f,,f,
+53c0f2a5-2b80-41ed-818f-91f69c816dba,Emma Listak,,,,,f,,nan,,,,,,f,,f,
+6ed34a71-8128-45fe-9086-56b7611065b7,Eric Burnett,eric@burnettinbox.com,,,,f,,(804) 690-8858,,,,,,f,,f,
+f5c0426e-832b-4cd0-83d5-41024983ecd5,Eric Chung,eric908458@gmail.com,,,,f,,(908) 458-2906,,,,,,f,,f,
+eec0f3cd-f68f-4f46-8617-ccbdacf70d68,Eric Pferdehirt,jpferdy2@gmail.com,,,,f,,(412) 277-5271,,,,,,f,,f,
+c10d05b8-5850-4cb5-8378-ec0c31c3af77,Erin Kingsley,kingsley.erin@gmail.com,,,,f,,(510) 680-9511,,,,,,f,,f,
+dea1113a-c549-4cea-961e-de7cc0dd1e41,Ethan Bressler,elbressler@gmail.com,,,,f,,(223) 221-1018,,,,,,f,,f,
+9c438d63-41fe-482f-a7fb-2a1d6473bf4e,Ethan Gindy,,,,,f,,(803) 317-5923,,,,,,f,,f,
+c65ceff5-e48d-463b-b1ec-722e561155f5,Ethan Rife,ethanrifebusiness@gmail.com,,,,f,,(541) 410-9280,,,,,,f,,f,
+2c4bede2-45aa-4b14-9f43-60123543bdd4,Eva Cline,evakate98@yahoo.com,,,,f,,(512) 693-1453,,,,,,f,,f,
+b213731e-8501-430d-a835-817eb861c180,Evan Dewitt,evanpdewitt@gmail.com,,,,f,,(512) 999-2837,,,,,,f,,f,
+06b9263e-4d3d-4ec9-9917-7c7f9ba60cfd,Everett Gawlikowski,everett1421@gmail.com,,,,f,,(281) 906-3449,,,,,,f,,f,
+df0942ff-41a1-444a-a527-3ccb3aa68608,Evie Mcneil,eviemcneil3@gmail.com,,,,f,,(713) 591-9484,,,,,,f,,f,
+385ddce8-9e12-42aa-b8bc-c8710f54510d,Faith Loving,faith.loving3@gmail.com,,,,f,,(830) 515-6881,,,,,,f,,f,
+58dcd901-06d2-4657-888e-46865210f5cd,Florin Delalba,,,,,f,,,,,,,,f,,f,
+f867d09d-053f-4692-8d2f-70ea70bcc5f8,Frank Gamboa,,,,,f,,nan,,,,,,f,,f,
+279180fc-3ce2-4e1f-881d-9df75ca3a1cf,Fray Castro,fraybonilla12@gmail.com,,,,f,,(920) 489-6688,,,,,,f,,f,
+0495b5eb-4e02-412f-8e3f-da4b323dfb61,Galilea Armenta,galileaa2020@gmail.com,,,,f,,(512) 831-2921,,,,,,f,,f,
+e286e95b-9356-462b-a2f6-0c7a7e11d1e7,Gareth Samberson,garethsamb@att.net,,,,f,,(469) 406-9671,,,,,,f,,f,
+705f794e-d139-49c3-85d6-d64e3bbfbb66,Gloria Nieto,nietogloria12@gmail.com,,,,f,,(512) 227-9859,,,,,,f,,f,
+e19ec172-9355-437f-b849-99b678a98d8e,Grace Eaton,gracieaton@gmail.com,,,,f,,(616) 443-4636,,,,,,f,,f,
+ec422c5e-e3b3-400d-926e-c67604923a6e,Grace Mcglynn,gcm958@utexas.edu,,,,f,,(912) 547-0536,,,,,,f,,f,
+2cdaddae-6646-4046-b8db-7c6e9d09c9e8,Grace Mendoza,jgrace.mendoza@gmail.com,,,,f,,(956) 862-0230,,,,,,f,,f,
+e1e4337c-8c1a-44db-9abc-155a92e91c4d,Grace Ogden,gracekogden@gmail.com,,,,f,,(512) 420-3589,,,,,,f,,f,
+163d1f65-4a94-4272-9824-c784cf8ebe0f,Gracelynn Vaughn,,,,,f,,nan,,,,,,f,,f,
+cdca7386-6126-4053-ba24-aed7b03a731b,Gracyn Webb,gracynwebb@gmail.com,,,,f,,(661) 310-8548,,,,,,f,,f,
+029e6073-76ce-4170-9a3b-f9fef30647e4,Gywn Simank,,,,,f,,nan,,,,,,f,,f,
+d03c0b27-eb2c-4683-975b-ab9c9397ac5a,Hadley Carr,hadleyccarr@gmail.com,,,,f,,(979) 257-6987,,,,,,f,,f,
+95c017b7-08db-43fc-9d44-58a25533a148,Hagen Morford,hagenmorford@gmail.com,,,,f,,(512) 954-8099,,,,,,f,,f,
+67c5d1dd-e298-4d12-a353-c2cc7cfda66f,Hailee Martinez,martinezhailee11@gmail.com,,,,f,,(575) 318-1447,,,,,,f,,f,
+523228d0-7c19-471b-b0fd-1b576881e35c,Haley Johnson,207hjohnson@gmail.com,,,,f,,(936) 899-4248,,,,,,f,,f,
+950d4ada-fec6-4fec-81c6-6a60d79cb789,Hannah Abraham,hsabraham28@gmail.com,,,,f,,(832) 622-5548,,,,,,f,,f,
+115f2df3-c5c1-44e4-a1ff-751524a11ef1,Hannah Erbeck,hannahe1498@gmail.com,,,,f,,(815) 570-1294,,,,,,f,,f,
+688de8bf-b1ed-4e93-a11b-68876000ea0a,Hannah Placencia,,,,,f,,nan,,,,,,f,,f,
+e499b966-af6c-494d-84ee-cd64a570cc0a,Hannahgrace Hurlbert,byhisgrace.hg@hotmail.com,,,,f,,(571) 404-2988,,,,,,f,,f,
+d50dd913-a8a4-47e0-bdfe-7885f8927cad,Harper Anderlitch,,,,,f,,(512) 913-8331,,,,,,f,,f,
+4d42a45e-f5c3-4aaf-a7ee-c1f0601df575,Harrison Coley,,,,,f,,(970) 367-3554,,,,,,f,,f,
+c1f84aea-82d1-4919-992b-03131b19238d,Ian Kawai Simmons-francisco,,,,,f,,nan,,,,,,f,,f,
+92dee9d4-08e2-4a6b-a1b7-a518c73f3eb7,Ilya Besancon,johnkerv@gmail.com,,,,f,,(202) 290-6461,,,,,,f,,f,
+afd38379-eaa3-42ff-8dcd-2858440e01fa,Isa Hilario,ilhilario13@gmail.com,,,,f,,(737) 742-0517,,,,,,f,,f,
+256296b0-1a87-4a95-aff7-8c3f3d556b5b,Isaac Young,,,,,f,,,,,,,,f,,f,
+d16f2473-5414-42bd-97b3-667b7df5c177,Isabel Powell,izzie_powell@yahoo.com,,,,f,,(512) 925-4571,,,,,,f,,f,
+7fc29a5d-d495-4d60-bbf8-7a50b20baf50,Isaiah Butts,isaiah.butts44@gmail.com,,,,f,,(512) 698-0819,,,,,,f,,f,
+dcc2611d-efdf-4c5a-bcef-9f9021c10c5e,Isaiah Studivent,isaiahstudivent119@gmail.com,,,,f,,(760) 851-6650,,,,,,f,,f,
+1037cb35-57b6-4f1d-a812-4286f2e4d6c0,Isreal Keshinro,,,,,f,,nan,,,,,,f,,f,
+9b3799ee-e04a-4164-952b-826a70401767,Izzy Bortolotti,kib446@utexas.edu,,,,f,,(281) 851-1461,,,,,,f,,f,
+bc6a5175-3efa-4e76-b8a5-d0ed13927f03,Jacob Madden,maddenjacob22@gmail.com,,,,f,,(512) 969-7317,,,,,,f,,f,
+38ce2b09-f464-4e08-85c7-fe72abec0371,Jacob Robinetts,,,,,f,,,,,,,,f,,f,
+31007c35-a383-4242-8771-0704db7c9ae1,Jacqueline Mccoy,jacqueline9792@gmail.com,,,,f,,(512) 993-9123,,,,,,f,,f,
+893814d0-865e-45ad-8cdf-7475949a0a42,Jada Fuhr,jnfuhr07@gmail.com,,,,f,,(512) 876-0906,,,,,,f,,f,
+20d362fa-5470-4e42-bb0b-7ef3cf9b8330,Jake Dapew,,,,,f,,,,,,,,f,,f,
+2b5748f4-1dbf-476c-b4e1-ec893a5f68e0,Jake Depwe,jake.depwe@g.austincc.edu,,,,f,,(512) 632-8402,,,,,,f,,f,
+006be031-e2a9-464c-a5e7-e8a6f3d80ec1,Jalesa Lewis,jalesalewis01@gmail.com,,,,f,,(330) 268-5261,,,,,,f,,f,
+393c74b0-f932-476b-b717-48e0fd1b49c0,James Caswell,james.pre.caswell@gmail.com,,,,f,,(512) 799-1624,,,,,,f,,f,
+915ba8ec-7817-4382-938d-c5e1890a65e2,James Snead,jamesosneadeo@gmail.com,,,,f,,(530) 488-0965,,,,,,f,,f,
+b49f1ccd-d2ea-4c86-a7fd-eff5d29771b6,Jared Oliveria,,,,,f,,,,,,,,f,,f,
+076a1520-83a5-4eab-8cc3-e05360e423ba,Jarred Longoria,,,,,f,,,,,,,,f,,f,
+92eced71-d518-4b48-8ce5-6d0745a75003,Jarvis Miles,jarvismilesjr@icloud.com,,,,f,,(346) 323-0794,,,,,,f,,f,
+cb644388-6210-4599-a60a-b2e27bd1b0c4,Jasmine Salazar,jasminesalazar24@gmail.com,,,,f,,(254) 548-2492,,,,,,f,,f,
+b5dd5f85-9c08-4380-8ec8-3c1f87edbd0c,Jason Diggs,,,,,f,,,,,,,,f,,f,
+c7c5a5bc-ec87-4ceb-b6b8-87817909dd6a,Jd Merrit,,,,,f,,,,,,,,f,,f,
+58b138af-1d73-43c1-a8d4-41d34d22c571,Jean-luc Parker,jlparker@cgtholdingsllc.com,,,,f,,(830) 221-8052,,,,,,f,,f,
+9bd5f5b0-9156-42b4-aad3-fba2e689f1b7,Jeanette Cameron,rubyjc70@gmail.com,,,,f,,(512) 827-8022,,,,,,f,,f,
+3bd8a698-5906-494e-afec-46128289055b,Jeff Barnhart,jeffrobarnhart@gmail.com,,,,f,,(512) 944-2462,,,,,,f,,f,
+9ed28f68-81fc-467a-8ae8-1797530254ce,Jessica Stomberg,jessicastomberg5@gmail.com,,,,f,,(224) 688-5988,,,,,,f,,f,
+6be73d80-c835-4960-abeb-56832627bf4d,Jimena Martinez,,,,,f,,,,,,,,f,,f,
+2640c254-4ad4-4c11-bdb5-9c23b6261d96,Joeseph Johnson,,,,,f,,,,,,,,f,,f,
+6f678572-e98d-4491-91f0-bb58dcfd4a6e,John Merritt,johndavidmerritt22@gmail.com,,,,f,,(806) 335-5047,,,,,,f,,f,
+67f51c0f-8872-47f1-b004-b423b3ff6409,Jok Mawut,,,,,f,,,,,,,,f,,f,
+ba2e1494-20a6-47c2-a9d7-634b093a6fee,Jok Mawut Mayen Jok,jokmawut8@gmail.com,,,,f,,(737) 900-1807,,,,,,f,,f,
+42e84937-31e4-4bdc-b4fc-c454f2f6a6bf,Jon Lee,lee.jonathan.888@gmail.com,,,,f,,(512) 574-7085,,,,,,f,,f,
+691c38bc-6add-4bd1-8a73-3b3d6b095882,Jon Siddiq,,,,,f,,(317) 625-2028,,,,,,f,,f,
+302c501e-3bda-4ba2-8cd2-ae8c322b7373,Jon Yates,jyatespe@gmail.com,,,,f,,(281) 858-3566,,,,,,f,,f,
+3c946629-8b91-4a7f-a38b-28f4e73d4836,Jonah Sam,jonahsam101@gmail.com,,,,f,,(434) 806-9086,,,,,,f,,f,
+a73c3246-dafb-421d-a252-408bd51e4b3c,Jonathan Yates,,,,,f,,,,,,,,f,,f,
+d8538f28-0b70-4f19-9f8e-28c9ef9cb012,Jordan Carlson,josunflower86468@gmail.com,,,,f,,(541) 326-9635,,,,,,f,,f,
+082daf3f-ea28-4bf7-9174-668ababe7e7b,Jordan Forsythe,jordan.forsythe@austinridge.org,,,,f,,(512) 554-3899,,,,,,f,,f,
+a4a8b88a-0e02-4780-903f-f0f63cc42c9e,Joseph Johnson,,,,,f,,,,,,,,f,,f,
+7e89ba69-e0f7-48b7-a28a-91eaa823a8eb,Josh Pope,,,,,f,,,,,,,,f,,f,
+f6b356c8-baa4-4adc-b948-f0591be83323,Joshua Pope,joshua.pope.864@gmail.com,,,,f,,(512) 300-8120,,,,,,f,,f,
+94a0b30c-c4f9-4c70-b643-a8243cf336c4,Josiah Pais,josiahnpais@gmail.com,,,,f,,(412) 770-4457,,,,,,f,,f,
+1a577cfc-ad2c-416b-bc5d-7ed41e1c27ff,Josiah Pias,,,,,f,,,,,,,,f,,f,
+daa80886-5fb0-4559-a6fe-33379cc001a1,Jozina Gomez,,,,,f,,,,,,,,f,,f,
+9bc5202a-4792-4aa3-a633-018c30861386,Jozina Pacheco Gomez,jozina.pachecog@gmail.com,,,,f,,50762730714,,,,,,f,,f,
+c302e794-1f34-4609-b2c7-9e12028b5345,Judith Guerra,judithkalynnguerra@gmail.com,,,,f,,(832) 766-8339,,,,,,f,,f,
+2fd39db8-cc0c-4888-8c5b-e4d52cae25a9,Julia Gilbert,tuckertrejo15@gmail.com,,,,f,,(512) 739-9310,,,,,,f,,f,
+e3d18950-1979-4237-9616-f6ea7cbdae0f,Julia Stone,,,,,f,,nan,,,,,,f,,f,
+f8dea886-c51e-4f5a-8ad5-ca5d2016c411,Justin Pferdehirt,jpferdy@gmail.com,,,,f,,(412) 515-9900,,,,,,f,,f,
+e1428d07-0eb8-4394-a028-8900b518e83d,Justin Pferdhirt,,,,,f,,,,,,,,f,,f,
+c71c5f1d-803c-4a99-a650-d71eea7a90e5,Kaden Deberardinis,kaden.deberardinis@yahoo.com,,,,f,,(713) 397-7686,,,,,,f,,f,
+97fb71a7-f409-4a99-ba79-88679e3b9878,Kaitlyn Mccourt,katiemccourt18@gmail.com,,,,f,,(808) 799-5213,,,,,,f,,f,
+1a2b77d4-3139-42e9-852e-e91d5516e5a5,Kaleigh Doiron,kd0300751@gmail.com,,,,f,,(337) 940-4173,,,,,,f,,f,
+e7593c36-51f0-4333-a69a-4917050ed8a0,Karani Namunyu,,,,,f,,(385) 455-3226,,,,,,f,,f,
+57f7acea-8b65-434f-aaf3-7e74ea6713cf,Kate Hansen,katehansen04@gmail.com,,,,f,,(805) 551-2206,,,,,,f,,f,
+a0bb7bf8-39b7-43e5-bf28-bcd1932bf28f,Kate Spradling,knspradling@gmail.com,,,,f,,(512) 922-2504,,,,,,f,,f,
+1a9e4f1e-5ffc-4686-82ce-ac583c0dc8f1,Katelyn Doiron,gkatelyn2019@gmail.com,,,,f,,(512) 573-5614,,,,,,f,,f,
+1611f8f8-5522-40af-82d4-042db56f20fa,Kathy Cui,kcui2014@gmail.com,,,,f,,(832) 614-6175,,,,,,f,,f,
+ef75b17e-0de6-467b-ad3c-f7bbab058463,Katie Mccourt,,,,,f,,,,,,,,f,,f,
+4e76b027-1a74-48ca-9276-a3b088e5ccf0,Kayla Gustafson,kaylagustafson9@gmail.com,,,,f,,(650) 753-9722,,,,,,f,,f,
+e1892042-30f9-4198-915b-11231b744019,Kayla Mosebrook,kmsheerin15@gmail.com,,,,f,,(310) 717-2349,,,,,,f,,f,
+91f12a16-da1d-44de-81db-b6a1958bd890,Kayla Williams,kaylawilliams099@gmail.com,,,,f,,(830) 351-3205,,,,,,f,,f,
+6d86896f-b51e-4f95-ab97-cf74d3183fe2,Kelsey Melvin,,,,,f,,,,,,,,f,,f,
+3bc532d3-fc22-4a37-9def-c0966177cf6d,Kennedy Johnson,kennedyjohnson01@icloud.com,,,,f,,(346) 391-2232,,,,,,f,,f,
+1ea7202e-18e1-46e1-bb25-d66bd5b26bfe,Kevin Champagne,kevin.champagne8@gmail.com,,,,f,,(512) 214-1201,,,,,,f,,f,
+446aed5c-453c-4fae-b857-5f4edcd6635b,Kevin Pangottil,kevsipa@gmail.com,,,,f,,(512) 969-1720,,,,,,f,,f,
+e24a4dbe-a460-40d2-bb06-4038af3c068d,Khoi Phan,alzero123@gmail.com,,,,f,,(737) 336-5251,,,,,,f,,f,
+478c8cc9-06d7-46a2-9276-ec1f3d740164,Kiara Haywood,kiarashaywood@gmail.com,,,,f,,(737) 222-8736,,,,,,f,,f,
+39faf650-7d77-4daf-901c-85d8600d95dc,Kirk Cameron,psarahtonen@gmail.com,,,,f,,(323) 533-0770,,,,,,f,,f,
+d174e4c4-e64a-49f1-8fe5-5892334004af,Kristi Truong,,,,,f,,(858) 735-4034,,,,,,f,,f,
+4ede9e32-6b66-4ac8-a5b8-38bd6f8c7d99,Krystal Springs,,,,,f,,(979) 820-4981,,,,,,f,,f,
+a46d4ee6-0b24-4fad-b1ab-607bfeb3689f,Kushal Chigati,chkus2024@gmail.com,,,,f,,(408) 590-2908,,,,,,f,,f,
+06aa2277-3835-4121-b32a-4c22a3c69652,Kynzi Soukup,kynznicole@gmail.com,,,,f,,(620) 805-4024,,,,,,f,,f,
+865898a3-569c-4472-ab89-4f0f6074dff6,Laura Grace Jones,lgj1116@gmail.com,,,,f,,(229) 460-7101,,,,,,f,,f,
+d3007a04-1b0a-415e-8bc6-5bde911b8667,Leah Gues,,,,,f,,,,,,,,f,,f,
+085e1c89-7ec3-4af1-9816-d21a45e54c15,Leah Guesman,leahgues77@gmail.com,,,,f,,(650) 823-9535,,,,,,f,,f,
+9c5e05f5-2a51-4b0c-85e1-61742b94159d,Leilani Hernandez,leilanihernandez455@gmail.com,,,,f,,(737) 389-4296,,,,,,f,,f,
+4212fa97-1241-4a98-bd6d-fb7ccab29062,Lena Delbianco,lenamariadelb@gmail.com,,,,f,,(703) 268-0226,,,,,,f,,f,
+7a8ccfd8-93b4-4116-bb38-6067049115ef,Leon Johnson,leonjohnson689@gmail.com,,,,f,,(704) 207-6504,,,,,,f,,f,
+ae02c26b-8819-4dd1-859a-a1397433ab2e,Leone Cruz,cruzjuanleo@gmail.com,,,,f,,(512) 458-0676,,,,,,f,,f,
+5ddfa6f4-ac99-4e01-b4cc-00034434fd8b,Lesley Diaz,lesley.diaz@ymail.com,,,,f,,(512) 705-2728,,,,,,f,,f,
+5bea0461-f57d-4947-b4da-41dd151144da,Lexi Gibbs,,,,,f,,,,,,,,f,,f,
+5d346e05-2733-43f0-967d-928df7a8649f,Liberty Davidson,liberty.davidson@gmail.com,,,,f,,(210) 857-1487,,,,,,f,,f,
+1d0e29a6-65ac-4def-9f6d-d70d5a007de0,Logan Allman,logana0403@gmail.com,,,,f,,(919) 758-2272,,,,,,f,,f,
+848ed022-9c22-4008-bb1e-4806eca2e042,Luc Lechner,luclechner@icloud.com,,,,f,,(361) 728-8757,,,,,,f,,f,
+2324c831-6dd9-4503-ab32-ddfef5d696e5,Luke Martin,lukemartin1699@gmail.com,,,,f,,(512) 234-1587,,,,,,f,,f,
+0a9c96fe-3d11-40ff-9476-7713aaa0d35a,Madison Dagenais,madison.dagenais03@gmail.com,,,,f,,(540) 532-3943,,,,,,f,,f,
+4c372f1f-10ce-4032-96f1-c3bc20ff49b5,Mahali Domingo,always4everadancer@msn.com,,,,f,,(206) 370-9043,,,,,,f,,f,
+745cf71c-c6cf-4de9-977b-bf0a6b748ace,Malinda Rinehart,,,,,f,,,,,,,,f,,f,
+c7e0465a-fbbd-4f0a-a370-5b253f67014e,Margarita Pruski,,,,,f,,nan,,,,,,f,,f,
+1a08a2a4-b0cc-4ef5-83aa-f04447abe55d,Mariah Salazar,79mariah.s@gmail.com,,,,f,,(325) 513-9772,,,,,,f,,f,
+275df957-dcba-4bde-8919-011a93029e43,Mark Miller,millerfamily@goldenwest.net,,,,f,,(605) 750-0068,,,,,,f,,f,
+781daac9-fd0e-4d55-9011-07ed70a82f19,Matt Claflin,,,,,f,,,,,,,,f,,f,
+2ca03c7f-0591-4114-a13d-e8568952549e,Matt Molloy,molloy_matt@att.net,,,,f,,(512) 605-8361,,,,,,f,,f,
+36dec60f-3040-41b9-bcce-cfb11e0bfb14,Matthew Driskill,matthew.driskill01@gmail.com,,,,f,,(512) 695-7217,,,,,,f,,f,
+dcf455e3-24a4-42a8-8e50-a805b627d70f,Matthew Wong,,,,,f,,nan,,,,,,f,,f,
+916a8b7e-da3b-402a-9edc-2193b034149f,Mauricio Leverone,mauricioleverone@gmail.com,,,,f,,(434) 851-8406,,,,,,f,,f,
+88b2092f-7da0-4fa2-a5f7-b9180cc447d3,Mckennon Rice,mckennonrice@gmail.com,,,,f,,(512) 660-3310,,,,,,f,,f,
+14d2ff0a-1837-4a89-9f8b-f9375ac405f0,Melinda Rinehart,,,,,f,,(858) 213-7722,,,,,,f,,f,
+3a2b0bc6-98d0-46db-9f84-a538dcc6f496,Miracle Johnson,miracle.johnson7@yahoo.com,,,,f,,(214) 407-4140,,,,,,f,,f,
+e48fb9fc-e821-4942-8572-7f7fb16822eb,Morgan Combs,morcombs25@gmail.com,,,,f,,(618) 383-0855,,,,,,f,,f,
+729476b9-6e7b-4abb-8211-1c05bcf8a830,Morgan Duke's Gf,,,,,f,,nan,,,,,,f,,f,
+2add03d5-0c5a-469d-ae4a-494713c4bfa4,Morgan Johnson,mbward001@gmail.com,,,,f,,(404) 372-1058,,,,,,f,,f,
+517f1370-74e1-4fc4-bec4-8af364f984c2,Nash Dolan,,,,,f,,(806) 831-8487,,,,,,f,,f,
+c9c09540-5b27-40b1-9268-d7903b50e1fd,Natalia Dominguez,nataliadominguezal@gmail.com,,,,f,,(737) 484-6500,,,,,,f,,f,
+5b10eee6-b8bb-4f81-ae2b-ded88a53fe33,Natalie Hall,natbh12@icloud.com,,,,f,,(817) 269-7663,,,,,,f,,f,
+c75a550f-8ecc-4e43-8f6c-3fa3f5d90d49,Natalie Walker,,,,,f,,,,,,,,f,,f,
+84a16746-fa5e-41fa-ae45-3efa8a32a05b,Natasha Schmid,,,,,f,,(312) 619-9668,,,,,,f,,f,
+3265efc0-fb50-4fd2-95b7-ab7e0b6d5f6d,Nate Gelabert,,,,,f,,,,,,,,f,,f,
+afcf9cea-59c2-4b30-9955-d49d3761f7ec,Nathan Galindo,nathan.zebedee@gmai.com,,,,f,,(210) 569-9512,,,,,,f,,f,
+1eb40a76-f553-4d1f-abdc-974445d02b7b,Naven Dabria,navendabria1@gmail.com,,,,f,,(504) 908-1826,,,,,,f,,f,
+edcb89a7-4fb8-45d5-a6ea-6b8f14071e39,Naya Domingo,naya.domingo@colostate.edu,,,,f,,(206) 839-7311,,,,,,f,,f,
+e0b8bd8e-0d09-4331-b86a-f06e641f1b6d,Newton Tran,newtontran7@gmail.com,,,,f,,(254) 421-3168,,,,,,f,,f,
+6f3f2cd4-e022-4b26-ad2d-acc491dc5e97,Nicholas Garcia,,,,,f,,,,,,,,f,,f,
+bf55ef63-7464-41c3-bdd5-c2aa7f54ee8c,Nick Castro,,,,,f,,,,,,,,f,,f,
+b019e053-4f37-4b43-a3bd-6246f1435576,Nico Zinsmeyer,,,,,f,,,,,,,,f,,f,
+70d8cebe-47a8-49d3-afa3-7352264000b5,Nikko Chazarreta,nikkochaz@gmail.com,,,,f,,(832) 633-5115,,,,,,f,,f,
+6633981d-33f3-4b24-b1ae-7c3a5ca546fc,Noah Pfiester,npfiester@icloud.com,,,,f,,(830) 377-8148,,,,,,f,,f,
+303e9b37-e18c-41cd-9f42-061a11e5ad57,Noah Temple,,,,,f,,(512) 698-7067,,,,,,f,,f,
+58f92e3a-a7a7-4828-9fd4-a4aaee1d4c58,Olivia Deleon,oliviah.del@gmail.com,,,,f,,(860) 205-9780,,,,,,f,,f,
+6ad33662-d9f0-4842-bbb4-8b6729770e28,Paige Byrd,paigebyrd14@yahoo.com,,,,f,,(812) 456-1321,,,,,,f,,f,
+c34cc0a8-179f-4e06-b227-bd9708f15e49,Paige More,paige.previvor@gmail.com,,,,f,,(949) 500-6431,,,,,,f,,f,
+d697500b-ddf6-45ec-88da-69a996e4b476,Paige Pritchard,ppritch21@gmail.com,,,,f,,(443) 804-9772,,,,,,f,,f,
+84860039-54b3-464b-b5be-9ed5dee97cbe,Paul Zhdan,paulzhdan@gmail.com,,,,f,,(630) 696-5048,,,,,,f,,f,
+a5322cd8-4436-47b9-848b-cae0620b55e0,Que (rusty's Sd),,,,,f,,,,,,,,f,,f,
+e5710950-e18e-4725-9e7b-0ea2a7a9c167,Que Troung,,,,,f,,(619) 208-4116,,,,,,f,,f,
+0a26142b-f4a7-47e5-aa09-437f80249e08,Rachel Alajian,gardengirl00@me.com,,,,f,,(310) 403-5837,,,,,,f,,f,
+c6efded1-1cf4-4d69-b812-2d5bbf6ada56,Rachel Dewitt,savetheturtlesksk@gmail.com,,,,f,,(512) 549-1501,,,,,,f,,f,
+ace8881f-2066-4671-ba89-4abf1b7177f0,Rachel Rushing,rachelrushing@utexas.edu,,,,f,,(972) 975-2730,,,,,,f,,f,
+52d9c063-e09d-4ff2-b4b9-f353df65231b,Rachel Voigt,rachelmichelle58@gmail.com,,,,f,,(512) 304-5194,,,,,,f,,f,
+12358025-391e-46f9-b2ca-95a060c574a9,Reagan Popoff,reaganpopoff@yahoo.com,,,,f,,(469) 560-3930,,,,,,f,,f,
+6098314a-0282-4e85-abfc-605f524a4e0d,Reed Showecker,reedshowecker@gmail.com,,,,f,,(650) 861-8221,,,,,,f,,f,
+5b279a73-65f8-4441-a8fc-7a583617c1ca,Rhondre Giscombe,rhondregiscombe@gmail.com,,,,f,,(305) 781-9565,,,,,,f,,f,
+9f918781-9864-4755-a864-c3ad3d764cbf,Rich Okon,,,,,f,,(682) 347-9581,,,,,,f,,f,
+e482f727-9d42-4a28-b39a-73f55ad3b549,Rico Tuski,tuskirico11@icloud.com,,,,f,,(575) 680-5256,,,,,,f,,f,
+c97cd500-a968-4c2d-ab10-be584e4b1c9c,Rohit Mahank,rohitmrfhem@gmail.com,,,,f,,(765) 767-1639,,,,,,f,,f,
+cf5eb0c8-cdca-40ea-bd5b-fae5ba5c059c,Ryan Mikula,,,,,f,,(832) 535-5200,,,,,,f,,f,
+d0d5f642-233b-4320-b378-789883d518cd,Samantha Bryant,,,,,f,,(512) 401-7213,,,,,,f,,f,
+b06ca949-27fc-4970-9416-25b2ddda188f,Samantha Sanchez,sanchez.samantha97@gmail.com,,,,f,,(737) 977-5508,,,,,,f,,f,
+0429ce5a-35e9-4ba5-bd92-bffe67667612,Scott Rinehart,srrinehart@gmail.com,,,,f,,(858) 735-3434,,,,,,f,,f,
+5fc3aacd-8a38-4576-bb2d-cb5c996c4cd9,Seth Fletscher,,,,,f,,(831) 713-9105,,,,,,f,,f,
+c0e29bff-7ab2-4967-a5d1-14dabdcb9711,Shania Hardin,shaniasmusic@gmail.com,,,,f,,(731) 334-7411,,,,,,f,,f,
+021e0757-2bf6-40eb-9bf6-31d16af02160,Shuo Yang,,,,,f,,(512) 299-8729,,,,,,f,,f,
+07c330b4-c279-4f57-abb9-642da41d938c,Skylar Sage,skylarsage10@gmail.com,,,,f,,(858) 997-5932,,,,,,f,,f,
+1af0c4ca-5ff4-4163-b6ed-1ddae0f38a32,Skylar Summers,,,,,f,,,,,,,,f,,f,
+0eeaf1b1-2038-4bd3-8334-e95c572b187a,Skyler Sumers,skylersumers1@gmail.com,,,,f,,(512) 781-3239,,,,,,f,,f,
+c1fbbdac-edbc-4362-afc2-91da78d7b5d5,Sofia Harms,sofia.harms@g.austincc.edu,,,,f,,(512) 924-9279,,,,,,f,,f,
+c74aeb0c-2a19-4601-af2c-24e6e959a5a9,Sophie Dalen,sophiedalen@gmail.com,,,,f,,(630) 333-0398,,,,,,f,,f,
+16c53411-406e-4927-9845-cec6292fd2fa,Sophie Smith,,,,,f,,nan,,,,,,f,,f,
+9190a768-d5cf-4f20-b167-86395091c087,Spencer Robbins,spencer.robbins02@gmail.com,,,,f,,(615) 487-9507,,,,,,f,,f,
+14064e6c-b604-4aa3-a178-d2a44ef68d82,Stephanie Irizarry,,,,,f,,(512) 952-9994,,,,,,f,,f,
+1fc3788e-d5e0-4076-b7e6-66c45ab16aec,Stephie Irizzary,,,,,f,,,,,,,,f,,f,
+67c51a16-498c-4232-b9db-a6fbcae5e166,Stephie Marie,,,,,f,,,,,,,,f,,f,
+ef80f894-1b17-4b52-ae0c-78bdbc1e25d8,Steve Rinehart,,,,,f,,(858) 213-1027,,,,,,f,,f,
+61d7131a-ea7e-4867-af52-bb5545e7a965,Sunitha Konatham,,,,,f,,,,,,,,f,,f,
+c96ba250-5bac-4248-8fc2-e6e1983d7df6,Sydney Frank,,,,,f,,,,,,,,f,,f,
+950beadb-a4c7-402b-83a4-ac09221411fa,Tammim Satar,tammim.satar@yahoo.com,,,,f,,(214) 405-4774,,,,,,f,,f,
+ad0a08ef-2eb3-4b1f-83ba-c87cc0bc7a0a,Tannya Olivia,,,,,f,,,,,,,,f,,f,
+2327da6d-eb45-489a-9a81-e4296f8d0e38,Taryn Stauffer,tarynstauffer@gmail.com,,,,f,,(717) 644-1857,,,,,,f,,f,
+2101ad4f-0e62-4855-a2e1-97a287f6c473,Taylor Alvarez,tayloralvarez01@gmail.com,,,,f,,(281) 979-4212,,,,,,f,,f,
+197a810c-c521-410b-ba07-676cf8d21c05,Taylor Anderson,,,,,f,,,,,,,,f,,f,
+d51be96b-976b-449d-8ef6-3bae1097b196,Taylor Brudos,taylor.brudos@gmail.com,,,,f,,(650) 213-6885,,,,,,f,,f,
+2b7abf75-9477-475b-ad3f-c9fec2c78ecd,Taylor Champagne,,,,,f,,,,,,,,f,,f,
+1f2131e2-e2fc-4021-b764-6f29cfbc5487,Taylor Moore,,,,,f,,(804) 661-3004,,,,,,f,,f,
+dd4d51d1-ec4c-4333-8776-180748da8acb,Thomas Longoria,,,,,f,,,,,,,,f,,f,
+395caeb7-8b1b-4ae0-b047-065da2d46282,Tien Hoang,tienh7657@gmail.com,,,,f,,(940) 704-4414,,,,,,f,,f,
+4514b662-1c3c-4557-aeee-2d1fea348ba1,Tim Vordenbaumen,,,,,f,,(512) 694-1754,,,,,,f,,f,
+c7f6516a-e16f-417b-a384-308cb2b53d09,Tomas Longoria,ricardo.t.longoria@gmail.com,,,,f,,(210) 464-4250,,,,,,f,,f,
+339453e9-23c9-49bc-8ef8-8d591fc119ee,Tony Latvenas (me),,,,,f,,,,,,,,f,,f,
+415d834c-02ff-40b6-8cbb-d8df16d4e6a7,Trent Lankford,trent.lank.006@gmail.com,,,,f,,(972) 214-9058,,,,,,f,,f,
+8335575c-812f-4ba4-8dd3-02752cc709c3,Tripp Graham,trippg0206@gmail.com,,,,f,,(512) 944-5335,,,,,,f,,f,
+ee2e8af4-a84f-4852-bceb-6aa0fe97255b,Tristan Workman,tristanworkmanofficial@gmail.com,,,,f,,(828) 449-7100,,,,,,f,,f,
+179e2362-f36a-4dd9-9103-f6b8bf1d2b7e,Tristman Workman,,,,,f,,,,,,,,f,,f,
+2cc8fcf2-57fa-4de8-b192-c3786f8e3b84,Tucker Oelsen,tuckeroelsen@gmail.com,,,,f,,(210) 288-2134,,,,,,f,,f,
+98c0bc9b-2f8d-4bd0-8ff2-d2fe6367a7c6,Tucker Trejo,tuckertrejo15@gmail.com,,,,f,,(512) 739-9310,,,,,,f,,f,
+f240bdc5-26c9-4b94-adb5-e57ac1dbe805,Tyan Anderlitch,tyanlove2fly@gmail.com,,,,f,,(512) 496-8437,,,,,,f,,f,
+dd8243fb-c71d-49d9-a312-81a376861d73,Tyler Cox,tyler78734@gmail.com,,,,f,,(512) 993-7263,,,,,,f,,f,
+d26d6803-8313-465f-a0cc-336078574029,Tyler Vayon,tvayon@live.com,,,,f,,(409) 330-3900,,,,,,f,,f,
+92f88aa6-fc8c-46b6-9ac9-ae9942f3ae52,Valenta Murra,,,,,f,,,,,,,,f,,f,
+bc8870e6-9283-44cd-a726-6fcbdf9dc236,Valentina Murra,vaale.murra@gmail.com,,,,f,,(954) 232-7990,,,,,,f,,f,
+2113221f-d316-48c7-ad9e-878a51f2d004,Valerie Ciolac,,,,,f,,nan,,,,,,f,,f,
+17f1fafd-b121-4b2a-8eef-a9080e13917f,Vallerie Ciolac,,,,,f,,,,,,,,f,,f,
+e47bd03b-f4f3-4d10-a3a0-be1d752a09a2,Victoria Ramos,ramos12victoria@gmail.com,,,,f,,(956) 508-6037,,,,,,f,,f,
+882e6674-5e88-43d6-975c-caa16d543059,Viv Norman,,,,,f,,,,,,,,f,,f,
+3c995854-fed9-496f-8f4c-ac7f53f823b0,Viviana Norman,vivinorman010@gmail.com,,,,f,,(512) 915-7415,,,,,,f,,f,
+1bf8ed43-c825-4589-939f-acaa328aa296,Wallace Chen,wallace.v.chen@vanderbilt.edu,,,,f,,(832) 535-8811,,,,,,f,,f,
+5282f4e1-f064-40f4-8d0a-f5815afd5621,Wesley Foreman,,,,,f,,,,,,,,f,,f,
+b08cb27d-a2e5-4beb-a902-ecac2c9716de,Wesley Foreman Ii,wesdarman@me.com,,,,f,,(512) 906-6371,,,,,,f,,f,
+955ab1f8-d24e-4da3-bcc1-ea099c0d3c4c,Will Biagini,biaginiws@gmail.com,,,,f,,(850) 346-6135,,,,,,f,,f,
+5c7ac87c-509d-4366-b7ae-85f4bf94aa40,William Tu,williamtu2009@gmail.com,,,,f,,(832) 867-8395,,,,,,f,,f,
+8b1b99f3-c1ef-42c5-a15f-7104865db4ad,Wylie Hawkins,wyliehawkinsffl@gmail.com,,,,f,,(970) 948-6022,,,,,,f,,f,
+62295a5c-f6c8-47b8-ae47-9c73986a3471,Zachary Kahle,zak.kahle@gmail.com,,,,f,,(512) 739-0798,,,,,,f,,f,
+2645771d-998a-4955-b80f-392db36ebf30,Zachary Khale,,,,,f,,,,,,,,f,,f,
