@@ -252,9 +252,9 @@ def get_legacy_opportunities(combined: Dict[str, List[List[Any]]]) -> Dict[str, 
 				print(type(col))
 				sys.exit()
 	# Sort opportunities by date and print
-	sorted_dates = sorted(opportunities.keys(), key=lambda d: datetime.datetime.strptime(d, '%m/%d/%Y'))
-	for date in sorted_dates:
-		print(f"{date}: {opportunities[date]}")
+	# sorted_dates = sorted(opportunities.keys(), key=lambda d: datetime.datetime.strptime(d, '%m/%d/%Y'))
+	# for date in sorted_dates:
+	# 	print(f"{date}: {opportunities[date]}")
 	return opportunities
 
 def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output_csv: str | Path = "data/opportunities_migrated.csv") -> None:
@@ -267,11 +267,50 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 	# Load existing opportunities
 	df = pd.read_csv("data/opportunities.csv")
 	# opportunities will be a dictionary that maps date to a list of opportunity names
-	opportunities = get_legacy_opportunities(combined)
+	legacy_opportunities = get_legacy_opportunities(combined)
 	# Loop through df
 	for index, row in df.iterrows():
 		print(row)
-		sys.exit()
+		date = row["datetime"]
+		# Handle timezone offset that may be +00 instead of +0000
+		if isinstance(date, str) and date.endswith('+00'):
+			date = date + '00'  # Convert +00 to +0000
+		date = datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S%z').strftime('%#m/%#d/%Y')
+		if date in legacy_opportunities:
+			continue
+		else:
+			# If date is in the future, skip
+			date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
+			if date_obj > datetime.datetime.now():
+				continue
+			print("Not in opportunities")
+			print(date)
+			sys.exit()
+	for legacy_opportunity in legacy_opportunities.items():
+		date, opportunity_names = legacy_opportunity
+		for opportunity_name in opportunity_names:
+			# Check if this date and opportunity_name already exists in df
+			matches = df[(df['datetime'].str.contains(date)) & (df['name'] == opportunity_name)]
+			if len(matches) == 0:
+				# Create new row
+				new_row = {
+					'id': str(uuid.uuid4()),
+					"image_url": None,
+					'title': opportunity_name,
+					'datetime': f"{datetime.datetime.strptime(date, '%m/%d/%Y').strftime('%Y-%m-%d')} 09:00:00-0500",
+					"location": "location coming soon",
+					'description': "description coming soon",
+					'spot_left': 0,
+					"created_at": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S%z'),
+					"Ended": "t",
+					"start_time": "start time coming soon",
+					"end_time": "end time coming soon",
+					"redemption_code": None,
+					"hours_approved": "f",
+					"location_link": None
+				}
+				# Append new row to df
+				df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
 	# Write to CSV with UTF-8 encoding
 	df.to_csv(output_csv, index=False, encoding='utf-8')
 	print(f'Wrote {output_csv} ({len(df)} total rows)')
