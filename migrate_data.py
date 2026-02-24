@@ -22,7 +22,9 @@ import re
 import argparse
 from query_legacy import load_legacy_data
 
-
+meal_prep_description = "Saturday Morning Meal Prep 🍞💪\n\nStart your Saturday with purpose! Join us as we prepare 306 Peanut Butter & Jelly sandwiches, load up coolers, and pack meals that half of which will head straight into the hands of our homeless neighbors that very same day.\n\nYou’ll be part of the behind-the-scenes crew that makes our outreach possible—fueling both our Saturday AND Sunday routes with love, compassion, and the Gospel message. From spreading peanut butter to praying over meals, every moment counts. 🧡\n\n🥪 Prep | 📦 Pack | 🚐 Load | 🙌 Serve\n\nMust be 18 or older to volunteer!"
+saturday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\nJoin us this Saturday as we hit the streets of Austin to bring meals, Bibles, and prayer to those experiencing homelessness. Every handout is a chance to offer not just food—but hope, encouragement, and the powerful love of Jesus Christ.\n\nWhether you’re a returning volunteer or it’s your first time out, you’ll be walking in purpose alongside a community of passionate believers ready to make an eternal impact. Let’s be bold in love, generous in spirit, and faithful in action. 💛\n\n📍Austin, TX | ⏰ Saturdays | 👐 Meals & Bibles | 🙏 Prayer & Connection\n\nMust be 18 or older to volunteer!\n\n(PARKING IS FREE)"
+sunday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\nJoin us this Sunday as we hit the streets of Austin to bring meals, Bibles, and prayer to those experiencing homelessness. Every handout is a chance to offer not just food—but hope, encouragement, and the powerful love of Jesus Christ.\n\nWhether you’re a returning volunteer or it’s your first time out, you’ll be walking in purpose alongside a community of passionate believers ready to make an eternal impact. Let’s be bold in love, generous in spirit, and faithful in action. 💛\n\n📍Austin, TX | ⏰ Sundays | 👐 Meals & Bibles | 🙏 Prayer & Connection\n\nMust be 18 or older to volunteer!\n\n(PARKING IS FREE)"
 
 def _format_phone(phone: str | None) -> str | None:
 	"""Normalize phone to (XXX) XXX-XXXX when possible, otherwise return original string or None."""
@@ -188,10 +190,10 @@ def get_legacy_opportunities(combined: Dict[str, List[List[Any]]]) -> Dict[str, 
 	opportunities: Dict[str, List[str]] = {}
 	ignored_columns = ["Volunteers:", "Total Hours:"]
 	sheets_of_interest = ["2024 Handouts", "2024 Meal Prep","2025 Saturday Handout", "2025 Sunday Handouts", "2025 Meal Prep", "2026 Saturday Handout", "2026 Sunday Handouts", "2026 Meal Prep"]
-	seventh = "seventh"
-	riverside = "riverside"
-	menchaca = "menchaca"
-	meal_prep = "Meal Prep"
+	seventh = "7th Street Handouts"
+	riverside = "Riverside Handouts"
+	menchaca = "Menchaca Handouts"
+	meal_prep = "Meal Prep & Pack"
 	first_day_of_saturday = datetime.datetime.strptime("4/5/2025", "%m/%d/%Y")
 	first_day_of_riverside = datetime.datetime.strptime("10/18/2025", "%m/%d/%Y")
 	missed_day = datetime.datetime.strptime("3/3/2024", "%m/%d/%Y")
@@ -270,7 +272,6 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 	legacy_opportunities = get_legacy_opportunities(combined)
 	# Loop through df
 	for index, row in df.iterrows():
-		print(row)
 		date = row["datetime"]
 		# Handle timezone offset that may be +00 instead of +0000
 		if isinstance(date, str) and date.endswith('+00'):
@@ -281,6 +282,7 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 		else:
 			# If date is in the future, skip
 			date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
+			
 			if date_obj > datetime.datetime.now():
 				continue
 			print("Not in opportunities")
@@ -290,27 +292,53 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 		date, opportunity_names = legacy_opportunity
 		for opportunity_name in opportunity_names:
 			# Check if this date and opportunity_name already exists in df
-			matches = df[(df['datetime'].str.contains(date)) & (df['name'] == opportunity_name)]
+			matches = df[(df['datetime'].str.contains(date)) & (df['title'] == opportunity_name)]
+			#full_datetime is YYYY-MM-DD HH:MM:SS+00
+			# meal prep is 16:00:00+00
+			# handouts on Saturdays are 19:30:00+00
+			# handouts on Sundays are 20:30:00+00
+			full_datetime = None
+			date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
+			if opportunity_name == "Meal Prep & Pack":
+				full_datetime = date_obj.replace(hour=16, minute=0, second=0)
+				end_datetime = date_obj.replace(hour=19, minute=0, second=0)
+				description = meal_prep_description
+			elif date_obj.weekday() == 5:  # Saturday
+				full_datetime = date_obj.replace(hour=19, minute=30, second=0)
+				end_datetime = date_obj.replace(hour=21, minute=0, second=0)
+				description = saturday_route_description
+			elif date_obj.weekday() == 6:  # Sunday
+				full_datetime = date_obj.replace(hour=20, minute=30, second=0)
+				end_datetime = date_obj.replace(hour=22, minute=0, second=0)
+				description = sunday_route_description
+			else:
+				sys.exit(f"Unexpected weekday for date {date} and opportunity {opportunity_name}")
+			location_dict = {
+				"Meal Prep & Pack": "364 Pale Horse Bend Buda, TX 78610",
+				"7th Street Handouts": "720 E 7th St, Austin, TX",
+				"Riverside Handouts": "1908 S Pleasant Valley Rd, Austin, TX",
+				"Menchaca Handouts": "2025 W Ben White Boulevard Frontage Rd, Austin, TX"}
 			if len(matches) == 0:
 				# Create new row
 				new_row = {
 					'id': str(uuid.uuid4()),
 					"image_url": None,
 					'title': opportunity_name,
-					'datetime': f"{datetime.datetime.strptime(date, '%m/%d/%Y').strftime('%Y-%m-%d')} 09:00:00-0500",
-					"location": "location coming soon",
-					'description': "description coming soon",
-					'spot_left': 0,
+					'datetime': full_datetime.strftime('%Y-%m-%d %H:%M:%S%z+00'),
+					"location": location_dict.get(opportunity_name),
+					"description": description,
+					'spots_left': 0,
 					"created_at": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S%z'),
 					"Ended": "t",
-					"start_time": "start time coming soon",
-					"end_time": "end time coming soon",
+					"start_time": full_datetime.strftime('%Y-%m-%d %H:%M:%S%z+00'),
+					"end_time": end_datetime.strftime('%Y-%m-%d %H:%M:%S%z+00'),
 					"redemption_code": None,
 					"hours_approved": "f",
 					"location_link": None
 				}
 				# Append new row to df
 				df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
 	# Write to CSV with UTF-8 encoding
 	df.to_csv(output_csv, index=False, encoding='utf-8')
 	print(f'Wrote {output_csv} ({len(df)} total rows)')
