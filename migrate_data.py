@@ -25,6 +25,8 @@ from query_legacy import load_legacy_data
 meal_prep_description = "Saturday Morning Meal Prep 🍞💪\n\nStart your Saturday with purpose! Join us as we prepare 306 Peanut Butter & Jelly sandwiches, load up coolers, and pack meals that half of which will head straight into the hands of our homeless neighbors that very same day.\n\nYou’ll be part of the behind-the-scenes crew that makes our outreach possible—fueling both our Saturday AND Sunday routes with love, compassion, and the Gospel message. From spreading peanut butter to praying over meals, every moment counts. 🧡\n\n🥪 Prep | 📦 Pack | 🚐 Load | 🙌 Serve\n\nMust be 18 or older to volunteer!"
 saturday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\nJoin us this Saturday as we hit the streets of Austin to bring meals, Bibles, and prayer to those experiencing homelessness. Every handout is a chance to offer not just food—but hope, encouragement, and the powerful love of Jesus Christ.\n\nWhether you’re a returning volunteer or it’s your first time out, you’ll be walking in purpose alongside a community of passionate believers ready to make an eternal impact. Let’s be bold in love, generous in spirit, and faithful in action. 💛\n\n📍Austin, TX | ⏰ Saturdays | 👐 Meals & Bibles | 🙏 Prayer & Connection\n\nMust be 18 or older to volunteer!\n\n(PARKING IS FREE)"
 sunday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\nJoin us this Sunday as we hit the streets of Austin to bring meals, Bibles, and prayer to those experiencing homelessness. Every handout is a chance to offer not just food—but hope, encouragement, and the powerful love of Jesus Christ.\n\nWhether you’re a returning volunteer or it’s your first time out, you’ll be walking in purpose alongside a community of passionate believers ready to make an eternal impact. Let’s be bold in love, generous in spirit, and faithful in action. 💛\n\n📍Austin, TX | ⏰ Sundays | 👐 Meals & Bibles | 🙏 Prayer & Connection\n\nMust be 18 or older to volunteer!\n\n(PARKING IS FREE)"
+sheets_of_interest = ["2024 Handouts", "2024 Meal Prep","2025 Saturday Handout", "2025 Sunday Handouts", "2025 Meal Prep", "2026 Saturday Handout", "2026 Sunday Handouts", "2026 Meal Prep"]
+
 
 def _format_phone(phone: str | None) -> str | None:
 	"""Normalize phone to (XXX) XXX-XXXX when possible, otherwise return original string or None."""
@@ -52,6 +54,18 @@ def _format_phone(phone: str | None) -> str | None:
 	if len(digits) == 10:
 		return f"({digits[:3]}) {digits[3:6]}-{digits[6:]}"
 	return s
+
+
+def normalize_name(name: Any) -> str | None:
+	"""Normalize a full name to title case; return None when input is not a full name string."""
+	if isinstance(name, str):
+		name = re.sub(r'\([^)]*\)', '', name)
+		name = name.strip()
+		if len(name.split()) >= 2:
+			return ' '.join(word.capitalize() for word in name.split())
+		elif len(name.split()) == 1:
+			return name.capitalize()
+	return None
 
 
 def get_all_sheets_records(file: str | Path = 'legacy_data.xlsx') -> Dict[str, List[List[Any]]]:
@@ -112,13 +126,16 @@ def get_all_names(combined: Dict[str, List[List[Any]]]) -> List[str]:
 	name_column = {"2024 Handouts": 0, "2024 Meal Prep": 0, "2025 Saturday Handout": 0, "2025 Sunday Handouts": 0, "2025 Meal Prep": 0, "Volunteer Info": 0}
 	for sheet, rows in combined.items():
 		column = name_column.get(sheet, 0)
-		for row in rows[1:]:
+		for row in rows[2:]:
 			if len(row) > column:
-				name = row[column]
-				if type(name) == str and len(name.split()) >= 2:
-					# Make all characters in name lower case except first character of each word
-					name = ' '.join(word.capitalize() for word in name.split())
-					names.add(name)
+				normalized_name = normalize_name(row[column])
+				if normalized_name is not None:
+					names.add(normalized_name)
+				elif row[column] is None:
+					continue
+				else:
+					print(f"Could not normalize name from sheet {sheet}, row: {row}")
+					sys.exit()
 
 	names_list = list(names)
 	names_list.sort()
@@ -150,6 +167,7 @@ def do_merging(combined: Dict[str, List[List[Any]]]) -> None:
 	all_names = set(names_legacy).union(set(names_new))
 	generate_migrated_users(only_in_legacy, combined)
 	generate_migrated_opportunities(combined)
+	generate_migrated_opportunity_participants(all_names, combined)
 
 
 def get_email_from_name(name: str, combined: Dict[str, List[List[Any]]]) -> str | None:
@@ -189,7 +207,6 @@ def get_legacy_opportunities(combined: Dict[str, List[List[Any]]]) -> Dict[str, 
 		combined: Combined legacy data sheets."""
 	opportunities: Dict[str, List[str]] = {}
 	ignored_columns = ["Volunteers:", "Total Hours:"]
-	sheets_of_interest = ["2024 Handouts", "2024 Meal Prep","2025 Saturday Handout", "2025 Sunday Handouts", "2025 Meal Prep", "2026 Saturday Handout", "2026 Sunday Handouts", "2026 Meal Prep"]
 	seventh = "7th Street Handouts"
 	riverside = "Riverside Handouts"
 	menchaca = "Menchaca Handouts"
@@ -259,6 +276,115 @@ def get_legacy_opportunities(combined: Dict[str, List[List[Any]]]) -> Dict[str, 
 	# 	print(f"{date}: {opportunities[date]}")
 	return opportunities
 
+def generate_migrated_opportunity_participants(all_names, combined, output_csv: str | Path = "data/opportunity_participants_migrated.csv") -> None:
+	"""Generate a new opportunity_participants CSV with rows from opportunity_participants.csv plus new rows for legacy opportunities."""
+	# Load existing opportunity_participants
+	opportunity_participants_df = pd.read_csv("data/opportunity_participants.csv")
+	opportunities_migrated_df = pd.read_csv("data/opportunities_migrated.csv")
+	users_migrated_df = pd.read_csv("data/users_migrated.csv")
+	for sheet in sheets_of_interest:
+		print(sheet)
+		rows = combined.get(sheet, [])
+		header = rows[0] if len(rows) > 0 else []
+		for row in rows[2:]:
+			print(row)
+			name_raw = row[0]
+			if name_raw is None:
+				continue
+			name = normalize_name(name_raw)
+			if name not in all_names:
+				print(all_names)
+				print(f"Name \"{name}\" from sheet {sheet} not found in all_names set, skipping row: {row}")
+				sys.exit()
+			total_hours = row[1]
+			for i in range(2, len(row)):
+				col = row[i]
+				header_col = header[i]
+				print(header_col)
+				print(col)
+				if col == "hernia" or col is None:
+					continue
+				# Get list of opportunities for this date/date range
+				opportunity_dates = get_opportunity_dates(opportunities_migrated_df, header_col, sheet)
+				#If col in the format "X(2)" then set it equal to 2
+				if isinstance(col, str) and re.match(r'^\w+\(\d*\.*\d*\)$', col):
+					col = float(re.findall(r'\((\d*\.*\d*)\)', col)[0])
+				hours = col / len(opportunity_dates)
+				for opportunity_date in opportunity_dates:
+					id = str(uuid.uuid4())
+					user_id = users_migrated_df.loc[users_migrated_df['name'] == name, 'id'].values[0]
+					opportunity_id = opportunities_migrated_df.loc[opportunities_migrated_df['datetime'] == opportunity_date, 'id'].values[0]
+					# if opportunity_id is already in opportunity_participants_df with this user_id, then skip to avoid duplicates after checking hours match up
+					existing_row = opportunity_participants_df[(opportunity_participants_df['user_id'] == user_id) & (opportunity_participants_df['opportunity_id'] == opportunity_id)]
+					if len(existing_row) > 0:
+						existing_hours = existing_row['total_hours'].values[0]
+						if existing_hours != hours:
+							print(f"Warning: existing hours {existing_hours} for user {name} and opportunity date {opportunity_date} do not match calculated hours {hours} from legacy data")
+							print(user_id, opportunity_id, existing_hours)
+							sys.exit()
+						continue
+					created_at = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f+00')
+					status = None
+					print(user_id, opportunity_id, created_at, hours)
+					opportunity_participants_df = pd.concat([opportunity_participants_df, pd.DataFrame([{
+						'id': id,
+						'user_id': user_id,
+						'opportunity_id': opportunity_id,
+						'created_at': created_at,
+						'status': status,
+						'total_hours': hours
+					}])], ignore_index=True)
+	# Write to CSV with UTF-8 encoding
+	opportunity_participants_df.to_csv(output_csv, index=False, encoding='utf-8')
+	print(f'Wrote {output_csv} ({len(opportunity_participants_df)} total rows)')
+
+def get_opportunity_dates(opportunities_migrated_df: pd.DataFrame, header_col: str, sheet: str) -> List[str]:
+	# sheet to title mapping
+	sheet_title_mapping = {"2024 Handouts": "7th Street Handouts", "2024 Meal Prep": "Meal Prep & Pack", "2025 Saturday Handout": "7th Street Handouts", "2025 Sunday Handouts": "Menchaca Handouts", "2025 Meal Prep": "Meal Prep & Pack", "2026 Saturday Handout": "Riverside Handouts", "2026 Sunday Handouts": "Menchaca Handouts", "2026 Meal Prep": "Meal Prep & Pack"}
+	expected_title = sheet_title_mapping.get(sheet)
+	# If header_col is in the format 1/28/24-4/14/24, extract the start and end dates and return a list of all dates in this range that are in opportunities_migrated_df
+	if re.match(r'^\d{1,2}/\d{1,2}/\d{2,4}\-\d{1,2}\/\d{1,2}\/\d{2,4}$', header_col):
+		start_str, end_str = header_col.split('-')
+		# Handle both 2-digit and 4-digit years
+		start_date = datetime.datetime.strptime(start_str, '%m/%d/%y' if len(start_str.split('/')[-1]) == 2 else '%m/%d/%Y').date()
+		end_date = datetime.datetime.strptime(end_str, '%m/%d/%y' if len(end_str.split('/')[-1]) == 2 else '%m/%d/%Y').date()
+		current_date = start_date
+		dates_in_range = []
+		while current_date <= end_date:
+			date_str = current_date.strftime('%Y-%m-%d 20:30:00+00')
+			if date_str in opportunities_migrated_df['datetime'].values:
+				dates_in_range.append(date_str)
+			current_date += datetime.timedelta(days=1)
+	#Elif header_col is in the format 2024-05-05 00:00:00
+	elif re.match(r'^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$', header_col):
+		date_str = datetime.datetime.strptime(header_col, '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d')
+		dates_in_range = []
+		if opportunities_migrated_df['datetime'].astype(str).str.contains(date_str).any():
+			# Get row in opportunities_migrated_df where datetime contains date_str and title is expected_title, and extract the datetime value from this row and add it to dates_in_range
+			datetime_row = opportunities_migrated_df[(opportunities_migrated_df['datetime'].astype(str).str.contains(date_str)) & (opportunities_migrated_df['title'] == expected_title)]
+			datetime_values = datetime_row['datetime']
+			if len(datetime_values) == 1:
+				dates_in_range.append(datetime_values.values[0])
+			elif len(datetime_values) == 0:
+				print(f"No matching datetime found for header column {header_col} with title {expected_title} in opportunities_migrated_df, skipping")
+				sys.exit()
+			else:
+				print(f"Multiple matching datetimes found for header column {header_col} with title {expected_title} in opportunities_migrated_df, skipping")
+				# print each datetime series object for debugging
+				for dt in datetime_values:
+					print(dt)
+				sys.exit()
+		else:
+			print(f"Date {date_str} from header column {header_col} not found in opportunities_migrated_df, skipping")
+			sys.exit()
+		if len(dates_in_range) > 1:
+			print(f"Multiple matching dates found for header column {header_col}: {dates_in_range}, skipping")
+			sys.exit()
+	else:
+		print("Unrecognized format for header column:", header_col)
+		sys.exit()
+	return dates_in_range
+
 def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output_csv: str | Path = "data/opportunities_migrated.csv") -> None:
 	"""Generate a new opportunities CSV with normalized phone numbers.
 
@@ -290,6 +416,9 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 			sys.exit()
 	for legacy_opportunity in legacy_opportunities.items():
 		date, opportunity_names = legacy_opportunity
+		# convert date into this format YYYY-MM-DD
+		date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
+		date = date_obj.strftime('%Y-%m-%d')
 		for opportunity_name in opportunity_names:
 			# Check if this date and opportunity_name already exists in df
 			matches = df[(df['datetime'].str.contains(date)) & (df['title'] == opportunity_name)]
@@ -298,7 +427,7 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 			# handouts on Saturdays are 19:30:00+00
 			# handouts on Sundays are 20:30:00+00
 			full_datetime = None
-			date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
+			date_obj = datetime.datetime.strptime(date, '%Y-%m-%d')
 			if opportunity_name == "Meal Prep & Pack":
 				full_datetime = date_obj.replace(hour=16, minute=0, second=0)
 				end_datetime = date_obj.replace(hour=19, minute=0, second=0)
