@@ -27,6 +27,9 @@ saturday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\n
 sunday_route_description = "Come Be the Hands and Feet of Jesus ✝️🫶\n\nJoin us this Sunday as we hit the streets of Austin to bring meals, Bibles, and prayer to those experiencing homelessness. Every handout is a chance to offer not just food—but hope, encouragement, and the powerful love of Jesus Christ.\n\nWhether you’re a returning volunteer or it’s your first time out, you’ll be walking in purpose alongside a community of passionate believers ready to make an eternal impact. Let’s be bold in love, generous in spirit, and faithful in action. 💛\n\n📍Austin, TX | ⏰ Sundays | 👐 Meals & Bibles | 🙏 Prayer & Connection\n\nMust be 18 or older to volunteer!\n\n(PARKING IS FREE)"
 sheets_of_interest = ["2024 Handouts", "2024 Meal Prep","2025 Saturday Handout", "2025 Sunday Handouts", "2025 Meal Prep", "2026 Saturday Handout", "2026 Sunday Handouts", "2026 Meal Prep"]
 
+first_day_of_saturday = datetime.datetime.strptime("4/5/2025", "%m/%d/%Y")
+first_day_of_riverside = datetime.datetime.strptime("10/18/2025", "%m/%d/%Y")
+missed_day = datetime.datetime.strptime("3/3/2024", "%m/%d/%Y")
 
 def _format_phone(phone: str | None) -> str | None:
 	"""Normalize phone to (XXX) XXX-XXXX when possible, otherwise return original string or None."""
@@ -211,9 +214,7 @@ def get_legacy_opportunities(combined: Dict[str, List[List[Any]]]) -> Dict[str, 
 	riverside = "Riverside Handouts"
 	menchaca = "Menchaca Handouts"
 	meal_prep = "Meal Prep & Pack"
-	first_day_of_saturday = datetime.datetime.strptime("4/5/2025", "%m/%d/%Y")
-	first_day_of_riverside = datetime.datetime.strptime("10/18/2025", "%m/%d/%Y")
-	missed_day = datetime.datetime.strptime("3/3/2024", "%m/%d/%Y")
+
 	for sheet in sheets_of_interest:
 		# print(sheet)
 		row = combined[sheet][0]
@@ -318,7 +319,7 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 					existing_row = opportunity_participants_df[(opportunity_participants_df['user_id'] == user_id) & (opportunity_participants_df['opportunity_id'] == opportunity_id)]
 					if len(existing_row) > 0:
 						existing_hours = existing_row['total_hours'].values[0]
-						if existing_hours != hours:
+						if existing_hours != hours and str(existing_hours) != str(hours):
 							print(f"Warning: existing hours {existing_hours} for user {name} and opportunity date {opportunity_date} do not match calculated hours {hours} from legacy data")
 							print(user_id, opportunity_id, existing_hours)
 							sys.exit()
@@ -358,6 +359,15 @@ def get_opportunity_dates(opportunities_migrated_df: pd.DataFrame, header_col: s
 	#Elif header_col is in the format 2024-05-05 00:00:00
 	elif re.match(r'^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$', header_col):
 		date_str = datetime.datetime.strptime(header_col, '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d')
+		# If header_col date is before first_day_of_saturday, then "2025 Sunday Handouts" should be "7th Street Handouts", otherwise it should be "Menchaca Handouts"
+		if sheet == "2025 Sunday Handouts":
+			header_date = datetime.datetime.strptime(header_col, '%Y-%m-%d %H:%M:%S')
+			if header_date < first_day_of_saturday:
+				expected_title = "7th Street Handouts"
+			else:
+				expected_title = "Menchaca Handouts"
+		else:
+			expected_title = sheet_title_mapping.get(sheet)
 		dates_in_range = []
 		if opportunities_migrated_df['datetime'].astype(str).str.contains(date_str).any():
 			# Get row in opportunities_migrated_df where datetime contains date_str and title is expected_title, and extract the datetime value from this row and add it to dates_in_range
