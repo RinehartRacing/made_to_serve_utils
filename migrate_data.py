@@ -126,8 +126,10 @@ def get_all_sheets_records(file: str | Path = 'legacy_data.xlsx') -> Dict[str, L
 
 def get_all_names(combined: Dict[str, List[List[Any]]]) -> List[str]:
 	names = set()
-	name_column = {"2024 Handouts": 0, "2024 Meal Prep": 0, "2025 Saturday Handout": 0, "2025 Sunday Handouts": 0, "2025 Meal Prep": 0, "Volunteer Info": 0}
+	name_column = {"2024 Handouts": 0, "2024 Meal Prep": 0, "2025 Saturday Handout": 0, "2025 Sunday Handouts": 0, "2025 RIVERSIDE ONLY": 0, "2025 Meal Prep": 0, "Volunteer Info": 0, "2026 Saturday Handout": 0, "2026 Sunday Handouts": 0, "2026 Meal Prep": 0, "2026 RIVERSIDE ONLY": 0}
 	for sheet, rows in combined.items():
+		if sheet not in name_column:
+			continue
 		column = name_column.get(sheet, 0)
 		for row in rows[2:]:
 			if len(row) > column:
@@ -283,6 +285,7 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 	opportunity_participants_df = pd.read_csv("data/opportunity_participants.csv")
 	opportunities_migrated_df = pd.read_csv("data/opportunities_migrated.csv")
 	users_migrated_df = pd.read_csv("data/users_migrated.csv")
+	saturday_riverside_split = ["2025", "2026"]
 	for sheet in sheets_of_interest:
 		print(sheet)
 		rows = combined.get(sheet, [])
@@ -303,10 +306,11 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 				header_col = header[i]
 				print(header_col)
 				print(col)
-				if col == "hernia" or col is None:
+				if col == "hernia" or col is None or (isinstance(col, float) and np.isnan(col)):
 					continue
 				# Get list of opportunities for this date/date range
 				opportunity_dates = get_opportunity_dates(opportunities_migrated_df, header_col, sheet)
+				print(opportunity_dates, header_col, sheet, col)
 				#If col in the format "X(2)" then set it equal to 2
 				if isinstance(col, str) and re.match(r'^\w+\(\d*\.*\d*\)$', col):
 					col = float(re.findall(r'\((\d*\.*\d*)\)', col)[0])
@@ -317,16 +321,50 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 					opportunity_id = opportunities_migrated_df.loc[opportunities_migrated_df['datetime'] == opportunity_date, 'id'].values[0]
 					# if opportunity_id is already in opportunity_participants_df with this user_id, then skip to avoid duplicates after checking hours match up
 					existing_row = opportunity_participants_df[(opportunity_participants_df['user_id'] == user_id) & (opportunity_participants_df['opportunity_id'] == opportunity_id)]
+					# If on Saturday Handout sheet and user exists on same date on RIVERSIDE ONLY sheet, then skip to avoid duplicates. Also check that the hours align and exit if they don't
+					# Get year from sheet
+					year_match = re.search(r'(\d{4})', sheet)
+					if sheet == f"{year_match.group(1)} Saturday Handout":
+						riverside_sheet = f"{year_match.group(1)} RIVERSIDE ONLY"
+						if riverside_sheet in combined:
+							riverside_rows = combined[riverside_sheet]
+							print(riverside_rows)
+							riverside_header = riverside_rows[0] if len(riverside_rows) > 0 else []
+							print(riverside_header)
+							name_col_index = riverside_header.index("Volunteers:")
+							for riverside_row in riverside_rows[2:]:
+								name_riverside = normalize_name(riverside_row[name_col_index]) if len(riverside_row) > name_col_index else None
+								if normalize_name(users_migrated_df['name']) == name_riverside and name_riverside is not None:
+									print(f"User {name_riverside} found on both {sheet} and {riverside_sheet}, skipping to avoid duplicate entries for same date")
+									print(riverside_row)
+									# Check hours align and exit if they don't
+									riverside_hours = riverside_row[1] if len(riverside_row) > 1 else None
+									if riverside_hours != hours and str(riverside_hours) != str(hours) and not pd.isna(riverside_hours):
+										print(f"Warning: existing hours {riverside_hours} for user {name_riverside} on {riverside_sheet} do not match calculated hours {hours} from legacy data")
+										sys.exit()
+									sys.exit()
+							if name_riverside is None:
+								continue
+							print(f"User {name_riverside} not found on {riverside_sheet}, continuing with entry from {sheet}")
+							print(riverside_row[name_col_index])
+							print(type(users_migrated_df['name']))
+							sys.exit()
+							
 					if len(existing_row) > 0:
 						existing_hours = existing_row['total_hours'].values[0]
-						if existing_hours != hours and str(existing_hours) != str(hours):
+						if existing_hours != hours and str(existing_hours) != str(hours) and not pd.isna(existing_hours):
 							print(f"Warning: existing hours {existing_hours} for user {name} and opportunity date {opportunity_date} do not match calculated hours {hours} from legacy data")
+							print(opportunity_participants_df)
 							print(user_id, opportunity_id, existing_hours)
+							print(col)
+							print(len(opportunity_dates))
+							print(hours)
+							opportunity_participants_df.to_csv("temp_debug.csv", index=False, encoding='utf-8')
 							sys.exit()
 						continue
 					created_at = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f+00')
 					status = None
-					print(user_id, opportunity_id, created_at, hours)
+					# print(user_id, opportunity_id, created_at, hours)
 					opportunity_participants_df = pd.concat([opportunity_participants_df, pd.DataFrame([{
 						'id': id,
 						'user_id': user_id,
