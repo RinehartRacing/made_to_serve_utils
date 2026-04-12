@@ -31,6 +31,10 @@ first_day_of_saturday = datetime.datetime.strptime("4/5/2025", "%m/%d/%Y")
 first_day_of_riverside = datetime.datetime.strptime("10/18/2025", "%m/%d/%Y")
 missed_day = datetime.datetime.strptime("3/3/2024", "%m/%d/%Y")
 
+# Account migrations - Anyone matching the name will be converted to the userid that links to that email
+# Joel Solomon
+account_migrations = {"Joel Solomon": "joelsolo904@gmail.com", "Alanna Vannoller": "alannavannoller@icloud.com", "Rusty Rinehart": "rustyrinehart2019@gmail.com", "Tony Latvenas": "tonylatvenas@madetoserve.org", "Wilkie Miller": "thewilkiemiller@gmail.com"}
+
 def _format_phone(phone: str | None) -> str | None:
 	"""Normalize phone to (XXX) XXX-XXXX when possible, otherwise return original string or None."""
 	if phone is None:
@@ -286,12 +290,75 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 	opportunities_migrated_df = pd.read_csv("data/opportunities_migrated.csv")
 	users_migrated_df = pd.read_csv("data/users_migrated.csv")
 	saturday_riverside_split = ["2025", "2026"]
+	warned_names: Set[str] = set()
+	logged_migrations: Set[str] = set()
+	# Create dictionary that has frequencies of each name in users_migrated_df to help with disambiguation when there are multiple users with the same name
+	name_frequencies = users_migrated_df['name'].value_counts().to_dict()
+	# For duplicate names, map name -> list of user_ids
+	name_to_all_user_ids: Dict[str, List[str]] = users_migrated_df.groupby('name')['id'].apply(list).to_dict()
+	# Map NORMALIZED name -> all user_ids (handles casing variants like "VanNoller" vs "Vannoller")
+	normalized_name_to_user_ids: Dict[str, List[str]] = {}
+	for _n, _uid in zip(users_migrated_df['name'], users_migrated_df['id']):
+		_norm = normalize_name(str(_n)) if pd.notna(_n) else None
+		if _norm:
+			normalized_name_to_user_ids.setdefault(_norm, []).append(_uid)
+	# Reassign existing opportunity_participants rows for account-migrated users
+	# (e.g. wilkie.miller@vianations.org -> thewilkiemiller@gmail.com)
+	uid_remap: Dict[str, str] = {}
+	for migration_name, target_email in account_migrations.items():
+		target_rows = users_migrated_df[users_migrated_df['email'] == target_email]
+		if target_rows.empty:
+			continue
+		target_uid = target_rows['id'].values[0]
+		norm_name = normalize_name(migration_name)
+		for old_uid in normalized_name_to_user_ids.get(norm_name, []):
+			if old_uid != target_uid:
+				uid_remap[old_uid] = target_uid
+	if uid_remap:
+		opportunity_participants_df['user_id'] = opportunity_participants_df['user_id'].replace(uid_remap)
+	# name -> first user_id (for non-duplicate names)
+	name_to_user_id: Dict[str, str] = users_migrated_df.set_index('name')['id'].to_dict()
+	# opportunity id <-> datetime lookups
+	opp_id_to_datetime: Dict[str, str] = dict(zip(opportunities_migrated_df['id'], opportunities_migrated_df['datetime']))
+	datetime_to_opp_id: Dict[str, str] = {}
+	for _oid, _dt in zip(opportunities_migrated_df['id'], opportunities_migrated_df['datetime']):
+		if _dt not in datetime_to_opp_id:
+			datetime_to_opp_id[_dt] = _oid
+	# Precompute: (user_id, datetime) -> hours from existing participants (for duplicate-name resolution)
+	uid_date_to_hours: Dict[tuple, Any] = {}
+	for _uid, _oid, _hrs in zip(
+		opportunity_participants_df['user_id'],
+		opportunity_participants_df['opportunity_id'],
+		opportunity_participants_df['total_hours'],
+	):
+		_dt = opp_id_to_datetime.get(_oid)
+		if _dt is not None:
+			uid_date_to_hours[(_uid, _dt)] = _hrs
+	# (user_id, opportunity_id) -> existing hours
+	existing_pair_hours: Dict[tuple, Any] = {}
+	for _uid, _oid, _hrs in zip(
+		opportunity_participants_df['user_id'],
+		opportunity_participants_df['opportunity_id'],
+		opportunity_participants_df['total_hours'],
+	):
+		existing_pair_hours[(_uid, _oid)] = _hrs
+	existing_pairs: Set[tuple] = set(existing_pair_hours.keys())
+	# user_id -> set of datetimes already attended
+	user_to_dates: Dict[str, Set[str]] = {}
+	for _uid, _oid in zip(opportunity_participants_df['user_id'], opportunity_participants_df['opportunity_id']):
+		_dt = opp_id_to_datetime.get(_oid)
+		if _dt is not None:
+			user_to_dates.setdefault(_uid, set()).add(_dt)
+	# Cache get_opportunity_dates results per (sheet, header_col)
+	opp_dates_cache: Dict[tuple, List[str]] = {}
+	# Accumulate new rows instead of pd.concat per iteration
+	new_rows: List[Dict[str, Any]] = []
 	for sheet in sheets_of_interest:
-		print(sheet)
+		# print(sheet)
 		rows = combined.get(sheet, [])
 		header = rows[0] if len(rows) > 0 else []
 		for row in rows[2:]:
-			print(row)
+			#print(row)
 			name_raw = row[0]
 			if name_raw is None:
 				continue
@@ -304,23 +371,73 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 			for i in range(2, len(row)):
 				col = row[i]
 				header_col = header[i]
-				print(header_col)
-				print(col)
+				#print(header_col)
+				#print(col)
 				if col == "hernia" or col is None or (isinstance(col, float) and np.isnan(col)):
 					continue
-				# Get list of opportunities for this date/date range
-				opportunity_dates = get_opportunity_dates(opportunities_migrated_df, header_col, sheet)
-				print(opportunity_dates, header_col, sheet, col)
+				# Get list of opportunities for this date/date range (cached per sheet+column)
+				cache_key = (sheet, header_col)
+				if cache_key not in opp_dates_cache:
+					opp_dates_cache[cache_key] = get_opportunity_dates(opportunities_migrated_df, header_col, sheet)
+				opportunity_dates = opp_dates_cache[cache_key]
+				#print(opportunity_dates, header_col, sheet, col)
 				#If col in the format "X(2)" then set it equal to 2
 				if isinstance(col, str) and re.match(r'^\w+\(\d*\.*\d*\)$', col):
 					col = float(re.findall(r'\((\d*\.*\d*)\)', col)[0])
 				hours = col / len(opportunity_dates)
+
 				for opportunity_date in opportunity_dates:
 					id = str(uuid.uuid4())
-					user_id = users_migrated_df.loc[users_migrated_df['name'] == name, 'id'].values[0]
-					opportunity_id = opportunities_migrated_df.loc[opportunities_migrated_df['datetime'] == opportunity_date, 'id'].values[0]
-					# if opportunity_id is already in opportunity_participants_df with this user_id, then skip to avoid duplicates after checking hours match up
-					existing_row = opportunity_participants_df[(opportunity_participants_df['user_id'] == user_id) & (opportunity_participants_df['opportunity_id'] == opportunity_id)]
+					# Resolve account migrations first — these always target a specific account
+					if name in account_migrations:
+						email = account_migrations[name]
+						migrated_user_row = users_migrated_df[users_migrated_df['email'] == email]
+						if len(migrated_user_row) == 0:
+							print(f"Error: No migrated user found with email {email} for name {name} in account_migrations")
+							sys.exit()
+						elif len(migrated_user_row) > 1:
+							print(f"Error: Multiple migrated users found with email {email} for name {name} in account_migrations")
+							sys.exit()
+						user_id = migrated_user_row['id'].values[0]
+						if name not in logged_migrations:
+							print(f"Account migration: matched name {name} to email {email} and user_id {user_id}")
+							logged_migrations.add(name)
+					# Resolve user_id for non-migrated names, handling duplicate names
+					elif name not in name_frequencies:
+						print(f"Error: name {name} from sheet {sheet} not found in users_migrated_df")
+						sys.exit()
+					elif name_frequencies.get(name, 0) > 1:
+						if name not in warned_names:
+							print(f"Warning: name {name} from sheet {sheet} found multiple times in users_migrated_df, finding best match based on date")
+							warned_names.add(name)
+						# Find which user_id for this name already has a participant entry matching this date+hours
+						matching_user_ids = [
+							uid for uid in name_to_all_user_ids.get(name, [])
+							if uid_date_to_hours.get((uid, opportunity_date)) == hours
+						]
+						if len(matching_user_ids) == 1:
+							user_id = matching_user_ids[0]
+						elif len(matching_user_ids) == 0:
+							user_id = name_to_user_id[name]
+						else:
+							print(matching_user_ids)
+							print(f"Error: name {name} from sheet {sheet} found multiple times in users_migrated_df, cannot determine user_id")
+							sys.exit()
+					else:
+						user_id = name_to_user_id[name]
+					opportunity_id = datetime_to_opp_id[opportunity_date]
+					pair_key = (user_id, opportunity_id)
+					# Skip if this user already has a participation entry for this opportunity/date.
+					# Account-migrated users check at the opportunity level (pair_key) to allow multiple
+					# events on the same calendar date (e.g. Riverside + 7th Street on the same day).
+					# Non-migrated duplicate names also check all accounts sharing the normalized name.
+					if name in account_migrations:
+						if pair_key in existing_pairs:
+							continue
+					else:
+						check_uids = normalized_name_to_user_ids.get(name, [user_id])
+						if any(opportunity_date in user_to_dates.get(uid, set()) for uid in check_uids):
+							continue
 					# If on Saturday Handout sheet and user exists on same date on RIVERSIDE ONLY sheet, then skip to avoid duplicates. Also check that the hours align and exit if they don't
 					# Get year from sheet
 					year_match = re.search(r'(\d{4})', sheet)
@@ -328,9 +445,9 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 						riverside_sheet = f"{year_match.group(1)} RIVERSIDE ONLY"
 						if riverside_sheet in combined:
 							riverside_rows = combined[riverside_sheet]
-							print(riverside_rows)
+							#print(riverside_rows)
 							riverside_header = riverside_rows[0] if len(riverside_rows) > 0 else []
-							print(riverside_header)
+							#print(riverside_header)
 							name_col_index = riverside_header.index("Volunteers:")
 							for riverside_row in riverside_rows[2:]:
 								name_riverside = normalize_name(riverside_row[name_col_index]) if len(riverside_row) > name_col_index else None
@@ -349,30 +466,33 @@ def generate_migrated_opportunity_participants(all_names, combined, output_csv: 
 							print(riverside_row[name_col_index])
 							print(type(users_migrated_df['name']))
 							sys.exit()
-							
-					if len(existing_row) > 0:
-						existing_hours = existing_row['total_hours'].values[0]
+
+					if pair_key in existing_pairs:
+						existing_hours = existing_pair_hours.get(pair_key)
 						if existing_hours != hours and str(existing_hours) != str(hours) and not pd.isna(existing_hours):
 							print(f"Warning: existing hours {existing_hours} for user {name} and opportunity date {opportunity_date} do not match calculated hours {hours} from legacy data")
-							print(opportunity_participants_df)
 							print(user_id, opportunity_id, existing_hours)
 							print(col)
 							print(len(opportunity_dates))
 							print(hours)
-							opportunity_participants_df.to_csv("temp_debug.csv", index=False, encoding='utf-8')
 							sys.exit()
 						continue
 					created_at = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f+00')
 					status = None
 					# print(user_id, opportunity_id, created_at, hours)
-					opportunity_participants_df = pd.concat([opportunity_participants_df, pd.DataFrame([{
+					new_rows.append({
 						'id': id,
 						'user_id': user_id,
 						'opportunity_id': opportunity_id,
 						'created_at': created_at,
 						'status': status,
 						'total_hours': hours
-					}])], ignore_index=True)
+					})
+					existing_pairs.add(pair_key)
+					user_to_dates.setdefault(user_id, set()).add(opportunity_date)
+	# Append all new rows at once
+	if new_rows:
+		opportunity_participants_df = pd.concat([opportunity_participants_df, pd.DataFrame(new_rows)], ignore_index=True)
 	# Write to CSV with UTF-8 encoding
 	opportunity_participants_df.to_csv(output_csv, index=False, encoding='utf-8')
 	print(f'Wrote {output_csv} ({len(opportunity_participants_df)} total rows)')
@@ -458,6 +578,9 @@ def generate_migrated_opportunities(combined: Dict[str, List[List[Any]]], output
 			date_obj = datetime.datetime.strptime(date, '%m/%d/%Y')
 			
 			if date_obj > datetime.datetime.now():
+				continue
+			# 4/3/2026 is an exception already in Supabase and not on Google Sheets
+			if date_obj.date() == datetime.datetime.strptime("4/3/2026", '%m/%d/%Y').date():
 				continue
 			print("Not in opportunities")
 			print(date)
