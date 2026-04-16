@@ -33,7 +33,7 @@ missed_day = datetime.datetime.strptime("3/3/2024", "%m/%d/%Y")
 
 # Account migrations - Anyone matching the name will be converted to the userid that links to that email
 # Joel Solomon
-account_migrations = {"Joel Solomon": "joelsolo904@gmail.com", "Alanna Vannoller": "alannavannoller@icloud.com", "Rusty Rinehart": "rustyrinehart2019@gmail.com", "Tony Latvenas": "tonylatvenas@madetoserve.org", "Wilkie Miller": "thewilkiemiller@gmail.com"}
+account_migrations = {"Joel Solomon": "joelsolo904@gmail.com", "Alanna Vannoller": "alannavannoller@icloud.com", "Rusty Rinehart": "rustyrinehart2019@gmail.com", "Tony Latvenas": "tonylatvenas@madetoserve.org", "Wilkie Miller": "thewilkiemiller@gmail.com", "Paige Madden": "paigebyrd8@gmail.com"}
 
 def _format_phone(phone: str | None) -> str | None:
 	"""Normalize phone to (XXX) XXX-XXXX when possible, otherwise return original string or None."""
@@ -63,15 +63,38 @@ def _format_phone(phone: str | None) -> str | None:
 	return s
 
 
+def _capitalize_word(word: str) -> str:
+	"""Capitalize a single name word, preserving short uppercase tokens and Mc/Mac patterns."""
+	# Preserve/force uppercase for 2-char tokens (AJ, JD) and uppercase 3-char tokens (III)
+	if len(word) <= 2 or (len(word) == 3 and word.isupper()):
+		return word.upper()
+	# Handle Mc/Mac prefixes (e.g. mcarthur -> McArthur, mccoy -> McCoy)
+	mc_match = re.match(r'^(mc)(.+)$', word, re.IGNORECASE)
+	if mc_match:
+		return 'Mc' + mc_match.group(2).capitalize()
+	mac_match = re.match(r'^(mac)([a-z].+)$', word, re.IGNORECASE)
+	if mac_match and len(word) > 4:
+		return 'Mac' + mac_match.group(2).capitalize()
+	# Handle De prefixes for known compound surnames (e.g. dewitt -> DeWitt)
+	_de_surnames = {'dewitt', 'delalba'}
+	if word.lower() in _de_surnames:
+		return 'De' + word[2:].capitalize()
+	# Handle Van prefixes (e.g. vannoller -> VanNoller)
+	van_match = re.match(r'^(van)(.+)$', word, re.IGNORECASE)
+	if van_match:
+		return 'Van' + van_match.group(2).capitalize()
+	return word.capitalize()
+
+
 def normalize_name(name: Any) -> str | None:
 	"""Normalize a full name to title case; return None when input is not a full name string."""
 	if isinstance(name, str):
 		name = re.sub(r'\([^)]*\)', '', name)
 		name = name.strip()
 		if len(name.split()) >= 2:
-			return ' '.join(word.capitalize() for word in name.split())
+			return ' '.join(_capitalize_word(word) for word in name.split())
 		elif len(name.split()) == 1:
-			return name.capitalize()
+			return _capitalize_word(name)
 	return None
 
 
